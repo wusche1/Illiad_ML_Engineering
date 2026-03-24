@@ -1,6 +1,10 @@
-"""Execute every lecture notebook with solutions injected, verify all tests pass."""
-import importlib.util
-import sys
+"""Execute every exercise notebook with solutions injected, verify all tests pass.
+
+For each notebook, finds cells tagged with exercise_id and solution_id metadata.
+Extracts the code from the solution markdown cell's ```python block, swaps it into
+the exercise code cell, then executes the entire notebook.
+"""
+import re
 from pathlib import Path
 
 import nbformat
@@ -12,22 +16,44 @@ LECTURES = ROOT / "lectures"
 
 
 def discover_exercises():
-    """Find exercise dirs that have both notebook.ipynb and solutions.py."""
-    dirs = sorted(p.parent for p in LECTURES.glob("*/exercises/*/solutions.py"))
-    return [(d, f"{d.parent.parent.name}/{d.name}") for d in dirs if (d / "notebook.ipynb").exists()]
+    """Find exercise dirs that have a notebook.ipynb with exercise_id cells."""
+    results = []
+    for nb_path in sorted(LECTURES.glob("*/exercises/*/notebook.ipynb")):
+        d = nb_path.parent
+        label = f"{d.parent.parent.name}/{d.name}"
+        results.append((d, label))
+    return results
 
 
-def load_solutions(exercise_dir: Path) -> dict:
-    spec = importlib.util.spec_from_file_location("solutions", exercise_dir / "solutions.py")
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    return mod.SOLUTIONS
+def extract_solutions(nb):
+    """Extract solution code from markdown cells tagged with solution_id."""
+    solutions = {}
+    for cell in nb.cells:
+        sid = cell.metadata.get("solution_id")
+        if not sid:
+            continue
+        m = re.search(r"```python\n(.+?)```", cell.source, re.DOTALL)
+        if m:
+            solutions[sid] = m.group(1).strip()
+    return solutions
 
 
-@pytest.mark.parametrize("exercise_dir", [d for d, _ in discover_exercises()], ids=[n for _, n in discover_exercises()])
+@pytest.mark.parametrize(
+    "exercise_dir",
+    [d for d, _ in discover_exercises()],
+    ids=[n for _, n in discover_exercises()],
+)
 def test_notebook(exercise_dir):
-    solutions = load_solutions(exercise_dir)
     nb = nbformat.read(exercise_dir / "notebook.ipynb", as_version=4)
+    solutions = extract_solutions(nb)
+
+    exercise_ids = [
+        cell.metadata["exercise_id"]
+        for cell in nb.cells
+        if cell.metadata.get("exercise_id")
+    ]
+    for eid in exercise_ids:
+        assert eid in solutions, f"Exercise '{eid}' has no matching solution cell"
 
     for cell in nb.cells:
         eid = cell.metadata.get("exercise_id")

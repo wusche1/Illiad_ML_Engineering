@@ -36,10 +36,9 @@ Both tracks merge. Notes NOT yet written.
 
 ### File structure
 
-Each exercise lives in `lectures/XX_name/exercises/YY_name/` with three files:
-- `notebook.ipynb` — the notebook students open (source of truth, edit directly)
+Each exercise lives in `lectures/XX_name/exercises/YY_name/` with two files:
+- `notebook.ipynb` — the notebook students open (single source of truth)
 - `utils.py` — test/check functions (print PASS/FAIL)
-- `solutions.py` — `SOLUTIONS` dict mapping exercise IDs to full solution code strings
 
 ### Notebook cell pattern
 
@@ -47,36 +46,26 @@ Per exercise within a notebook, cells appear in this order:
 1. **Markdown** — explanation + instructions
 2. **Code cell** — skeleton with `# TODO`. Cell metadata must include `"exercise_id": "some_id"`
 3. **Test cell** — calls check function from `utils.py` (e.g. `test_sgd(SGD)`)
-4. **Hint/Solution markdown** — collapsible `<details>` blocks showing full solution class
+4. **Hint/Solution markdown** — collapsible `<details>` blocks with the full standalone solution in a ` ```python ``` ` block. Cell metadata must include `"solution_id": "some_id"` matching the exercise
 5. **Visualization** — optional plot/output cell
+
+The solution code block must be a complete, standalone replacement for the exercise cell (full function/class definition, not just the body).
 
 The notebook also needs at the top:
 1. **Colab badge** as first markdown cell (REQUIRED)
 2. **Setup cell** — fetches `utils.py` from GitHub raw URL on Colab, uses importlib reload
 
-### solutions.py format
-
-```python
-SOLUTIONS = {
-    "exercise_id": """\
-class Foo:
-    def __init__(self, ...):
-        ...
-    def step(self):
-        # the actual solution
-""",
-}
-```
-
-Keys must match the `exercise_id` metadata on the corresponding notebook code cells.
-
 ### Testing
 
-`tests/test_notebooks.py` auto-discovers every exercise dir that has both `notebook.ipynb` and `solutions.py`. For each one it:
-1. Reads the notebook
-2. Swaps exercise code cells with the solution from `solutions.py` (matched by `exercise_id` metadata)
-3. Executes the entire notebook
-4. Fails if any cell errors or any output contains "FAIL"
+`tests/test_notebooks.py` auto-discovers every `notebook.ipynb` under `lectures/*/exercises/*/`. For each one it:
+1. Finds all cells with `exercise_id` metadata and all cells with `solution_id` metadata
+2. Extracts the python code from each solution cell's ` ```python ``` ` block
+3. Asserts every exercise has a matching solution
+4. Swaps the solution code into the exercise cell
+5. Executes the entire notebook
+6. Fails if any cell errors or any output contains "FAIL"
+
+No separate solutions file needed. The notebook is the single source of truth.
 
 Run with: `uv run pytest tests/ -v`
 
@@ -85,7 +74,7 @@ Run with: `uv run pytest tests/ -v`
 1. Create `lectures/XX_name/exercises/YY_name/`
 2. Author `notebook.ipynb` directly in Jupyter/Colab following the cell pattern above
 3. Write `utils.py` with test functions that print PASS/FAIL
-4. Write `solutions.py` with a `SOLUTIONS` dict
+4. Tag exercise code cells with `exercise_id` and solution markdown cells with `solution_id` in cell metadata
 5. Verify: `uv run pytest tests/ -v` should pick it up automatically
 
 GitHub repo URL pattern for Colab setup cells: `https://raw.githubusercontent.com/wusche1/Illiad_ML_Engineering/main/lectures/XX_name/exercises/YY_name/utils.py`
@@ -104,7 +93,7 @@ uv run python scripts/tools/rag.py "query"  # Search literature with RAG
 ## Repo Structure
 
 - `lectures/XX_name/{notes.md, slides.tex}` - Lecture content
-- `lectures/XX_name/exercises/YY_name/{notebook.ipynb, utils.py, solutions.py}` - Exercises
+- `lectures/XX_name/exercises/YY_name/{notebook.ipynb, utils.py}` - Exercises
 - `lectures/XX_name/claude_notes.md` - AI's research notes (only when explicitly instructed)
 - `tests/test_notebooks.py` - Auto-discovers and tests all exercise notebooks
 - `lib/{preamble.tex, packages.tex, settings.tex, metadata.tex}` - Shared LaTeX config
