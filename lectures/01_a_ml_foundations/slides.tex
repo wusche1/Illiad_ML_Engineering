@@ -213,8 +213,42 @@ $$\theta_{t+1} = \theta_t - \alpha \, \nabla_\theta \mathcal{L}$$
 \item Simple and robust
 \item Can be slow: oscillates across narrow valleys, crawls along them
 \end{itemize}
-\vspace{1em}
-% TODO: add picture of descent with too-small and too-large learning rate
+\end{frame}
+
+\begin{frame}{Learning Rate}
+\begin{center}
+\begin{tikzpicture}[xscale=1.8, yscale=1.4]
+  % Loss landscape
+  \draw[thick, blue!60!black, domain=-3.2:3.2, samples=100]
+    plot (\x, {0.3*\x*\x + 0.15*sin(3*\x r)});
+  \node[below] at (0, -0.3) {$\theta^*$};
+  \node[left, font=\small] at (-3.2, 2.5) {$\mathcal{L}$};
+
+  % Too-small learning rate (left side)
+  \foreach \x/\xn in {-2.8/-2.5, -2.5/-2.25, -2.25/-2.05, -2.05/-1.9} {
+    \fill[red!70!black] (\x, {0.3*\x*\x + 0.15*sin(3*\x r)}) circle (1.5pt);
+    \draw[->, red!70!black, thick]
+      (\x, {0.3*\x*\x + 0.15*sin(3*\x r)}) --
+      (\xn, {0.3*\xn*\xn + 0.15*sin(3*\xn r)});
+  }
+  \fill[red!70!black] (-1.9, {0.3*1.9*1.9 + 0.15*sin(-3*1.9 r)}) circle (1.5pt);
+  \node[red!70!black, above, font=\small] at (-2.4, {0.3*2.8*2.8 + 0.15*sin(-3*2.8 r) + 0.1})
+    {$\alpha$ too small: slow};
+
+  % Too-large learning rate (right side)
+  \fill[orange!80!black] (2.0, {0.3*4.0 + 0.15*sin(6.0 r)}) circle (1.5pt);
+  \draw[->, orange!80!black, thick, dashed]
+    (2.0, {0.3*4.0 + 0.15*sin(6.0 r)}) to[bend left=15]
+    (-1.8, {0.3*3.24 + 0.15*sin(-5.4 r)});
+  \fill[orange!80!black] (-1.8, {0.3*3.24 + 0.15*sin(-5.4 r)}) circle (1.5pt);
+  \draw[->, orange!80!black, thick, dashed]
+    (-1.8, {0.3*3.24 + 0.15*sin(-5.4 r)}) to[bend left=15]
+    (2.5, {0.3*6.25 + 0.15*sin(7.5 r)});
+  \fill[orange!80!black] (2.5, {0.3*6.25 + 0.15*sin(7.5 r)}) circle (1.5pt);
+  \node[orange!80!black, above, font=\small] at (2.3, {0.3*6.25 + 0.15*sin(7.5 r) + 0.1})
+    {$\alpha$ too large: diverges};
+\end{tikzpicture}
+\end{center}
 \end{frame}
 
 \begin{frame}{Momentum \cite{sutskever2013}}
@@ -226,8 +260,76 @@ $$\theta_{t+1} = \theta_t - \alpha \, v_{t+1}$$
 \item Dampens oscillations in steep directions
 \item Can roll over small local minima
 \end{itemize}
-\vspace{1em}
-% TODO: add picture of momentum rolling over a local minimum
+\end{frame}
+
+\begin{frame}{Momentum Escapes Local Minima}
+\begin{center}
+\begin{tikzpicture}[x=1.2cm, y=0.55cm]
+  % Loss landscape: one continuous left-to-right curve, no branches
+  % left wall -> global min -> barrier -> local min -> right slope
+  \draw[very thick, blue!60!black]
+    (-4.5, 7)                          % far left, high
+    to[out=-20, in=170] (-3, -1)       % descend to global min
+    to[out=-10, in=190] (-2, 0)        % right wall of global min
+    to[out=10, in=220] (-0.5, 4)       % up to barrier
+    to[out=40, in=170] (0.5, 4.2)      % barrier plateau
+    to[out=-10, in=150] (1, 3)         % descending from barrier
+    to[out=-30, in=170] (2, 1)         % into local min
+    to[out=-10, in=200] (3, 2)         % right wall of local min
+    to[out=20, in=195] (5.5, 7);       % ascending right slope
+
+  \node[left, font=\small] at (-4.5, 7.5) {$\mathcal{L}$};
+
+  % Labels
+  \node[below, font=\small, blue!60!black] at (2, 0.3) {local min};
+  \node[below, font=\small, blue!60!black] at (-3, -1.7) {global min};
+  \node[above, font=\scriptsize, gray] at (0, 4.7) {barrier};
+
+  % === SGD (red): rolls into local min, gets stuck ===
+  \fill[red!70!black] (4.5, 4.8) circle (2.5pt);
+  \draw[->, red!70!black, very thick] (4.5, 4.8) -- (3.5, 2.5);
+  \fill[red!70!black] (3.5, 2.5) circle (2.5pt);
+  \draw[->, red!70!black, very thick] (3.5, 2.5) -- (2.7, 1.5);
+  \fill[red!70!black] (2.7, 1.5) circle (2.5pt);
+  \draw[->, red!70!black, very thick] (2.7, 1.5) -- (2.2, 1.15);
+  \fill[red!70!black] (2.2, 1.15) circle (2.5pt);
+  \node[red!70!black, right, font=\small\bfseries] at (5, 4.8) {SGD};
+  \node[red!70!black, font=\scriptsize] at (2.8, 0.5) {stuck};
+
+  % === Momentum (green): descends, passes through local min, climbs barrier, reaches global min ===
+  \fill[green!50!black] (4.5, 5.6) circle (2.5pt);
+  \node[green!50!black, right, font=\small\bfseries] at (5, 5.6) {Momentum};
+
+  % Step 1: descend into local min
+  \draw[->, green!50!black, very thick]
+    (4.5, 5.6) to[out=200, in=20] (2, 1.8);
+  \fill[green!50!black] (2, 1.8) circle (2.5pt);
+  % Step 2: past minimum, climbing uphill against gradient
+  \draw[->, green!50!black, very thick]
+    (2, 1.8) to[out=200, in=-30] (1, 3.5);
+  \fill[green!50!black] (1, 3.5) circle (2.5pt);
+  % Step 3: cresting the barrier
+  \draw[->, green!50!black, very thick]
+    (1, 3.5) to[out=150, in=-30] (0, 5.0);
+  \fill[green!50!black] (0, 5.0) circle (2.5pt);
+  % Step 4: over the top
+  \draw[->, green!50!black, very thick]
+    (0, 5.0) to[out=210, in=50] (-1, 4.2);
+  \fill[green!50!black] (-1, 4.2) circle (2.5pt);
+  % Step 5: descending toward global min
+  \draw[->, green!50!black, very thick]
+    (-1, 4.2) to[out=230, in=50] (-2, 0.8);
+  \fill[green!50!black] (-2, 0.8) circle (2.5pt);
+  % Step 6: into global min
+  \draw[->, green!50!black, very thick]
+    (-2, 0.8) to[out=230, in=60] (-3, -0.3);
+  \fill[green!50!black] (-3, -0.3) circle (2.5pt);
+
+  % Annotation arrow pointing at the uphill segment
+  \draw[green!50!black, thick, ->] (2.5, 7.5) to[out=230, in=60] (0.7, 4);
+  \node[green!50!black, above, font=\scriptsize, align=center] at (2.5, 7.5) {accumulated velocity\\carries it uphill};
+\end{tikzpicture}
+\end{center}
 \end{frame}
 
 \begin{frame}{Adam = Momentum + RMSProp \cite{kingma2014}}
