@@ -172,7 +172,7 @@ Example: rating text quality, given only pairwise human preferences (``I prefer 
 
 The preferred text should be rated higher:
 $$\mathcal{L} = -\log \sigma(r_\theta(x_w) - r_\theta(x_l))$$
-\cite{christiano2023a}
+\cite{christiano2017}
 \end{frame}
 
 \begin{frame}{Loss Functions: Reinforcement Learning}
@@ -217,7 +217,7 @@ $$\theta_{t+1} = \theta_t - \alpha \, \nabla_\theta \mathcal{L}$$
 % TODO: add picture of descent with too-small and too-large learning rate
 \end{frame}
 
-\begin{frame}{Momentum}
+\begin{frame}{Momentum \cite{sutskever2013}}
 $$v_{t+1} = \beta \, v_t + (1 - \beta) \, \nabla_\theta \mathcal{L}$$
 $$\theta_{t+1} = \theta_t - \alpha \, v_{t+1}$$
 \begin{itemize}
@@ -230,7 +230,7 @@ $$\theta_{t+1} = \theta_t - \alpha \, v_{t+1}$$
 % TODO: add picture of momentum rolling over a local minimum
 \end{frame}
 
-\begin{frame}{Adam = Momentum + RMSProp}
+\begin{frame}{Adam = Momentum + RMSProp \cite{kingma2014}}
 $$m_{t+1} = \beta_1 m_t + (1-\beta_1) g_t \qquad v_{t+1} = \beta_2 v_t + (1-\beta_2) g_t^2$$
 $$\hat{m} = \frac{m_{t+1}}{1-\beta_1^{t+1}} \qquad \hat{v} = \frac{v_{t+1}}{1-\beta_2^{t+1}}$$
 $$\theta_{t+1} = \theta_t - \alpha \frac{\hat{m}}{\sqrt{\hat{v}} + \epsilon}$$
@@ -380,7 +380,7 @@ $$L(N) \propto N^{-\alpha}$$
 \begin{itemize}
 \item Loss decreases as a power law with model size, data, or compute
 \item Enables predicting performance before training the full model
-\item Compute-optimal training: balance model size and data % TODO: add Chinchilla citation
+\item Compute-optimal training: balance model size and data \cite{hoffmann2022}
 \end{itemize}
 \vspace{1em}
 % TODO: add Chinchilla scaling law plot
