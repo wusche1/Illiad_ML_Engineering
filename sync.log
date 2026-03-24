@@ -4051,3 +4051,5102 @@ Successfully added 81 chunks for sutskever2013
 Processing 18 chapters for kingma2014
 Generating embeddings for 54 chunks...
 Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:01<00:01,  1.31s/it]Batches: 100%|██████████| 2/2 [00:01<00:00,  1.09it/s]Batches: 100%|██████████| 2/2 [00:01<00:00,  1.03it/s]
+Successfully added 54 chunks for kingma2014
+
+✅ Successfully embedded all papers!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ○ not embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+Embedding 1 new papers...
+
+--- Processing christiano2017 ---
+Processing 16 chapters for christiano2017
+Generating embeddings for 86 chunks...
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:03<00:06,  3.18s/it]Batches:  67%|██████▋   | 2/3 [00:06<00:03,  3.01s/it]Batches: 100%|██████████| 3/3 [00:08<00:00,  2.55s/it]Batches: 100%|██████████| 3/3 [00:08<00:00,  2.69s/it]
+Successfully added 86 chunks for christiano2017
+
+✅ Successfully embedded all papers!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 5 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping christiano2023a - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 5 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 5 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded christiano2023a (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 5
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+
+Removing embeddings for 1 papers that no longer exist:
+  Removing christiano2023a
+Successfully removed paper: christiano2023a
+
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md
+  Skipping extraction (markdown already exists): kingma2014_fulltext.md
+  Skipping extraction (markdown already exists): christiano2017_fulltext.md
+Text extraction completed: 0 processed, 4 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping hoffmann2022 - chapters folder already exists
+  Skipping sutskever2013 - chapters folder already exists
+  Skipping kingma2014 - chapters folder already exists
+  Skipping christiano2017 - chapters folder already exists
+
+Processed 0 literature items
+Skipped 4 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2017 (16 chapters)
+  ✓ embedded hoffmann2022 (2 chapters)
+  ✓ embedded kingma2014 (18 chapters)
+  ✓ embedded sutskever2013 (6 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 4
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: kingma2014.pdf
+  PDF already exists: hoffmann2022.pdf
+  PDF already exists: sutskever2013.pdf
+  PDF already exists: christiano2017.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): sutskever2013_fulltext.md

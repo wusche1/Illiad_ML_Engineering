@@ -477,15 +477,13 @@ Any property not set by gradient descent is set by the experimenter:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Scaling Laws}
-$$L(N) \propto N^{-\alpha}$$
-\begin{itemize}
-\item Loss decreases as a power law with model size, data, or compute
-\item Enables predicting performance before training the full model
-\item Compute-optimal training: balance model size and data \cite{hoffmann2022}
-\end{itemize}
-\vspace{1em}
-% TODO: add Chinchilla scaling law plot
+\begin{frame}{Scaling Laws \cite{kaplan2020}}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/scaling_laws.png}
+\end{center}
+\vspace{0.5em}
+Performance follows smooth power laws across $>6$ orders of magnitude in compute, data, and parameters.
+Cheap small experiments predict large-scale performance.
 \end{frame}
 
 \begin{frame}{}

@@ -1,4 +1,5 @@
 TEXBIN = /Library/TeX/texbin
+export PATH := $(HOME)/.local/bin:$(PATH)
 LECTURES = $(sort $(wildcard lectures/*/))
 
 lecture-%: lectures/%/slides.tex
