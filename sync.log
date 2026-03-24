@@ -1,0 +1,4053 @@
+/Users/julianschulz/Projects/AI_safety/Illiad_ML_Engineering/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:683: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+/Users/julianschulz/Projects/AI_safety/Illiad_ML_Engineering/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:683: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+/Users/julianschulz/Projects/AI_safety/Illiad_ML_Engineering/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:683: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+/Users/julianschulz/Projects/AI_safety/Illiad_ML_Engineering/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:683: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  Copied PDF: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Extracting PDF text with Docling: christiano2023a.pdf (this may take a while...)
+  Extracted text: christiano2023a_fulltext.md
+Text extraction completed: 1 processed, 0 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  PDF: Created 16 chapters for christiano2023a
+    Wrote 16 chapter files to bib/christiano2023a/chapters
+
+Processed 1 literature items
+Skipped 0 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+
+Removing embeddings for 1 papers that no longer exist:
+  Removing HXE4ANX4
+Successfully removed paper: HXE4ANX4
+
+Found 1 papers with chapters:
+  ○ not embedded christiano2023a (16 chapters)
+
+Embedding 1 new papers...
+
+--- Processing christiano2023a ---
+Processing 16 chapters for christiano2023a
+Generating embeddings for 86 chunks...
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:01<00:03,  1.52s/it]Batches:  67%|██████▋   | 2/3 [00:02<00:01,  1.47s/it]Batches: 100%|██████████| 3/3 [00:03<00:00,  1.27s/it]Batches: 100%|██████████| 3/3 [00:03<00:00,  1.33s/it]
+Successfully added 86 chunks for christiano2023a
+
+✅ Successfully embedded all papers!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  PDF already exists: christiano2023a.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+ERROR: Collection Illiad_ML_Engineering not found!
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+ERROR: Collection Illiad_ML_Engineering not found!
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)/Users/julianschulz/Projects/AI_safety/Illiad_ML_Engineering/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:683: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+ERROR: Collection Illiad_ML_Engineering not found!
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+Text extraction completed: 0 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  Skipping christiano2023a - chapters folder already exists
+
+Processed 0 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 1 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+
+✅ All papers are already embedded!
+Total papers in database: 1
+
+Waiting 30s...
+
+--- Zotero metadata sync ---
+Starting metadata sync for collection: Illiad_ML_Engineering
+  Copied PDF: kingma2014.pdf
+  Copied PDF: hoffmann2022.pdf
+  Copied PDF: sutskever2013.pdf
+Metadata sync completed
+
+--- Text extraction ---
+Starting text extraction from: bib
+  Extracting PDF text with Docling: hoffmann2022.pdf (this may take a while...)
+  Extracted text: hoffmann2022_fulltext.md
+  Skipping extraction (markdown already exists): christiano2023a_fulltext.md
+  Extracting PDF text with Docling: sutskever2013.pdf (this may take a while...)
+  Extracted text: sutskever2013_fulltext.md
+  Extracting PDF text with Docling: kingma2014.pdf (this may take a while...)
+  Extracted text: kingma2014_fulltext.md
+Text extraction completed: 3 processed, 1 skipped
+
+--- Label sync ---
+Combined refs.bib + 0 labels -> bib/labels.bib
+
+--- Chapter creation ---
+Creating chapters from literature in: bib
+Minimum chapter size: 500 characters
+
+  PDF: Created 2 chapters for hoffmann2022
+    Wrote 2 chapter files to bib/hoffmann2022/chapters
+  Skipping christiano2023a - chapters folder already exists
+  PDF: Created 6 chapters for sutskever2013
+    Wrote 6 chapter files to bib/sutskever2013/chapters
+  PDF: Created 18 chapters for kingma2014
+    Wrote 18 chapter files to bib/kingma2014/chapters
+
+Processed 3 literature items
+Skipped 1 items (chapters already exist)
+
+--- Embeddings creation ---
+Initialized with model: all-mpnet-base-v2
+Found 4 papers with chapters:
+  ✓ embedded christiano2023a (16 chapters)
+  ○ not embedded hoffmann2022 (2 chapters)
+  ○ not embedded kingma2014 (18 chapters)
+  ○ not embedded sutskever2013 (6 chapters)
+
+Embedding 3 new papers...
+
+--- Processing hoffmann2022 ---
+Processing 2 chapters for hoffmann2022
+Generating embeddings for 89 chunks...
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:01<00:02,  1.39s/it]Batches:  67%|██████▋   | 2/3 [00:02<00:01,  1.34s/it]Batches: 100%|██████████| 3/3 [00:03<00:00,  1.21s/it]Batches: 100%|██████████| 3/3 [00:03<00:00,  1.25s/it]
+Successfully added 89 chunks for hoffmann2022
+
+--- Processing sutskever2013 ---
+Processing 6 chapters for sutskever2013
+Generating embeddings for 81 chunks...
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:01<00:02,  1.41s/it]Batches:  67%|██████▋   | 2/3 [00:02<00:01,  1.19s/it]Batches: 100%|██████████| 3/3 [00:03<00:00,  1.05it/s]Batches: 100%|██████████| 3/3 [00:03<00:00,  1.04s/it]
+Successfully added 81 chunks for sutskever2013
+
+--- Processing kingma2014 ---
+Processing 18 chapters for kingma2014
+Generating embeddings for 54 chunks...
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:01<00:01,  1.31s/it]Batches: 100%|██████████| 2/2 [00:01<00:00,  1.09it/s]Batches: 100%|██████████| 2/2 [00:01<00:00,  1.03it/s]

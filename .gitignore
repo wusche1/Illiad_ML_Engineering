@@ -1,6 +1,7 @@
 
-# Ignore lecture build outputs
-lectures/*/output/
+# Ignore lecture build outputs (except PDFs)
+lectures/*/output/*
+!lectures/*/output/slides.pdf
 
 # Ignore all PDF files in bib folder
 bib/**/*.pdf

@@ -21,5 +21,15 @@
 % Citations and references
 \usepackage[backend=biber,style=authoryear,url=true,doi=false,eprint=false,maxnames=99,maxcitenames=1]{biblatex}
 
+% Code listings
+\usepackage{minted}
+\usemintedstyle{default}
+\setminted{
+  bgcolor=black!5,
+  fontsize=\small,
+  breaklines,
+  frame=none,
+}
+
 % Appendix frame numbering
 \usepackage{appendixnumberbeamer}

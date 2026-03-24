@@ -38,7 +38,9 @@ class ZoteroDatabase:
     
     def __init__(self, zotero_data_dir: Path):
         self.zotero_db = zotero_data_dir / "zotero.sqlite"
-        self.bbt_db = zotero_data_dir / "better-bibtex.sqlite"
+        bbt_migrated = zotero_data_dir / "better-bibtex.migrated"
+        bbt_sqlite = zotero_data_dir / "better-bibtex.sqlite"
+        self.bbt_db = bbt_migrated if bbt_migrated.exists() and bbt_migrated.stat().st_size > 0 else bbt_sqlite
     
     def get_collection_id(self, collection_name: str) -> Optional[int]:
         """Get collection ID from collection name"""
@@ -106,8 +108,20 @@ class ZoteroDatabase:
         return items
     
     def _get_citation_key(self, item_key: str) -> str:
-        """Get citation key from Better BibTeX"""
-        if self.bbt_db.exists():
+        """Get citation key from Better BibTeX (checks Zotero itemData first, then legacy BBT db)."""
+        with sqlite3.connect(f'file:{self.zotero_db}?immutable=1', uri=True) as conn:
+            cur = conn.cursor()
+            cur.execute("""
+                SELECT idv.value FROM items
+                JOIN itemData id ON items.itemID = id.itemID
+                JOIN fields f ON id.fieldID = f.fieldID
+                JOIN itemDataValues idv ON id.valueID = idv.valueID
+                WHERE items.key = ? AND f.fieldName = 'citationKey';
+            """, (item_key,))
+            result = cur.fetchone()
+            if result:
+                return result[0]
+        if self.bbt_db.exists() and self.bbt_db.stat().st_size > 0:
             with sqlite3.connect(f'file:{self.bbt_db}?immutable=1', uri=True) as conn:
                 cur = conn.cursor()
                 cur.execute("SELECT citationKey FROM citationkey WHERE itemKey = ?;", (item_key,))

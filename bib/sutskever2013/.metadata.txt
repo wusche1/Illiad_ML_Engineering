@@ -1,0 +1,7 @@
+Title: On the importance of initialization and momentum in deep learning
+Author: Sutskever
+Year: 2013
+Type: conferencePaper
+Citation Key: sutskever2013
+Zotero Key: RSVHQBD6
+URL: https://proceedings.mlr.press/v28/sutskever13.html

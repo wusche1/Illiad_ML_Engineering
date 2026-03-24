@@ -20,28 +20,46 @@
 \section{The Training Loop}
 % ============================================================
 
-\begin{frame}{The Training Loop}
-\begin{enumerate}
-\item \textbf{Forward pass}: compute predictions from inputs
-\item \textbf{Loss}: measure how wrong the predictions are
-\item \textbf{Backward pass}: compute gradients $\nabla_\theta \mathcal{L}$
-\item \textbf{Optimizer step}: update parameters $\theta \leftarrow \theta - \alpha \nabla_\theta \mathcal{L}$
-\item Repeat
-\end{enumerate}
-\vspace{1em}
-This is \emph{the} loop.
-Everything else in ML is about making each step better.
+\begin{frame}{Concepts in Machine Learning}
+Four ingredients:
+\begin{description}
+\item[Data] some input to a task we want an AI to do
+\item[Model] gets data, outputs something (a classification, an action, a prediction)
+\item[Loss function] quantifies how well the model did
+\item[Optimizer] updates the model to do the task better
+\end{description}
 \end{frame}
 
-\begin{frame}{Stochasticity}
-We want to minimize the \emph{true} loss over the full data distribution:
+\begin{frame}[fragile]{The Training Loop in PyTorch}
+\begin{minted}{python}
+for x, y in dataloader:
+    optimizer.zero_grad()
+    prediction = model(x)         # forward pass
+    loss = loss_fn(prediction, y) # compute loss
+    loss.backward()               # backward pass
+    optimizer.step()              # update parameters
+\end{minted}
+\vspace{1em}
+This is \emph{the} loop.
+Everything else in ML is about making each piece better.
+\end{frame}
+
+\begin{frame}{Terminology}
+\begin{description}
+\item[Parameters / weights] the numbers that represent the model itself, updated by the optimizer ($\theta$)
+\item[Activations] the numbers created as we feed data through the network
+\item[Hyperparameters] choices made \emph{before} training: learning rate, batch size, architecture
+\end{description}
+\end{frame}
+
+\begin{frame}{Stochasticity and Batching}
+We want to minimize the true loss over the full data distribution:
 $$\mathcal{L}(\theta) = \mathbb{E}_{x \sim \mathcal{D}} \left[ \ell(f_\theta(x), y) \right]$$
-But we only ever see a finite batch $\mathcal{B} \subset \mathcal{D}$ at each step:
+But we only ever see a finite \textbf{batch} $\mathcal{B} \subset \mathcal{D}$ at each step:
 $$\hat{\mathcal{L}}(\theta) = \frac{1}{|\mathcal{B}|} \sum_{(x,y) \in \mathcal{B}} \ell(f_\theta(x), y)$$
 \begin{itemize}
 \item Every gradient is a noisy estimate of the true gradient
-\item Smaller batches $\Rightarrow$ more noise, but cheaper per step
-\item This noise can actually help escape local minima
+\item Batch size controls the noise level
 \end{itemize}
 \end{frame}
 
@@ -49,174 +67,167 @@ $$\hat{\mathcal{L}}(\theta) = \frac{1}{|\mathcal{B}|} \sum_{(x,y) \in \mathcal{B
 \section{Tensors and PyTorch}
 % ============================================================
 
-\begin{frame}[fragile]{Tensors in PyTorch}
-A tensor is an $n$-dimensional array with a dtype and a device.
-\begin{itemize}
-\item Creating: \texttt{torch.tensor([1, 2, 3])}, \texttt{torch.zeros(3, 4)}
-\item Casting: \texttt{x.float()}, \texttt{x.long()}, \texttt{x.to(torch.bfloat16)}
-\item Arithmetic: \texttt{x + y}, \texttt{x * y}, \texttt{x @ y} (matrix multiply)
-\item Reshaping: \texttt{x.view(2, 3)}, \texttt{x.unsqueeze(0)}, \texttt{x.permute(1, 0)}
-\end{itemize}
+\begin{frame}[fragile]{Tensors}
+The central object in PyTorch: multidimensional arrays of numbers.
+\vspace{0.5em}
+
+We use tensors to represent: data, parameters, activations, outputs, losses.
+\vspace{0.5em}
+
+\begin{minted}{python}
+x = torch.tensor([1.0, 2.0, 3.0])
+M = torch.zeros(3, 4)
+\end{minted}
+\vspace{0.5em}
+
+By convention, everything except parameters has the \textbf{batch dimension first}, so we can process many samples at once.
+\end{frame}
+
+\begin{frame}[fragile]{Tensor Operations}
+\begin{minted}{python}
+torch.exp(x)           # elementwise exponential
+A @ B                  # matrix multiply
+x.unsqueeze(0)         # add a dimension
+\end{minted}
+\vspace{1em}
+
+Einstein notation makes index operations explicit:
+$$C_{ij} = \sum_k A_{ik} B_{kj}$$
+\begin{minted}{python}
+torch.einsum('ik,kj->ij', A, B)
+\end{minted}
 \end{frame}
 
 \begin{frame}[fragile]{Einops}
-\texttt{einops} gives a readable notation for tensor operations:
-\begin{itemize}
-\item \texttt{rearrange(x, 'b c h w -> b (c h w)')} \quad (flatten)
-\item \texttt{rearrange(x, 'b (h w) c -> b c h w', h=32)} \quad (unflatten)
-\item \texttt{reduce(x, 'b c h w -> b c', 'mean')} \quad (pool)
-\item \texttt{repeat(x, 'b c -> b c n', n=3)} \quad (tile)
-\end{itemize}
-\vspace{0.5em}
-Makes dimension manipulation explicit and less error-prone.
-\end{frame}
+Readable notation for tensor reshaping:
+\begin{minted}{python}
+# PyTorch (what does this do?)
+x.reshape(B, S, n_heads, d_head).permute(0, 2, 1, 3)
 
-\begin{frame}{Batching and Data Loading}
+# Einops (self-documenting)
+rearrange(x, 'b s (h d) -> b h s d', h=n_heads)
+\end{minted}
+\vspace{0.5em}
 \begin{itemize}
-\item The \textbf{batch dimension} is (by convention) the first axis
-\item All operations broadcast over the batch dimension
-\item \texttt{DataLoader} handles batching, shuffling, and parallel loading
-\end{itemize}
-\vspace{1em}
-\textbf{Why batch?}
-\begin{itemize}
-\item GPUs are massively parallel: one sample vs.\ 64 samples takes nearly the same time
-\item Batching amortizes the overhead of each forward/backward pass
+\item \texttt{rearrange}: reshape, permute, split, merge
+\item \texttt{reduce}: pool over dimensions
+\item \texttt{repeat}: tile/broadcast
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Autograd and the Computation Graph}
-PyTorch builds a \textbf{directed acyclic graph} of every operation:
-\begin{itemize}
-\item Each tensor with \texttt{requires\_grad=True} is a leaf node
-\item Operations create intermediate nodes
-\item \texttt{loss.backward()} traverses the graph in reverse, applying the chain rule
-\item Gradients accumulate in \texttt{.grad} (must call \texttt{zero\_grad()})
-\end{itemize}
+Tensors keep track of a computational graph as you operate on them.
+\vspace{0.5em}
+\begin{enumerate}
+\item Build up expressions from tensors with \texttt{requires\_grad=True}
+\item Call \texttt{.backward()} on a scalar result
+\item Every tensor in the graph can now access its gradient via \texttt{.grad}
+\end{enumerate}
 \vspace{1em}
 You never write derivatives by hand.
 The graph is rebuilt every forward pass (``define-by-run'').
 \end{frame}
 
-\begin{frame}[fragile]{Devices and Memory}
+\begin{frame}[fragile]{Devices}
 \begin{itemize}
 \item Tensors live on a \textbf{device}: CPU or GPU (\texttt{cuda:0})
-\item Move with \texttt{x.to('cuda')} or \texttt{x.cuda()}
+\item Move with \texttt{x.to('cuda')}
 \item All tensors in an operation must be on the same device
-\item GPU memory is the bottleneck for model size and batch size
+\item GPU memory is the main bottleneck for model size and batch size
 \end{itemize}
-\vspace{1em}
-\textbf{Speedups from GPU}:
-matrix multiplies, convolutions, attention, anything that parallelizes.
 \end{frame}
 
 \begin{frame}{}
 \centering
-\Large \textbf{Exercise 1: Tensors and Autograd} \\[1em]
+\Large \textbf{Exercise 1: PyTorch Basics} \\[1em]
 \normalsize 25 minutes
+% TODO: add Colab link and QR code
 \end{frame}
 
 % ============================================================
 \section{Loss Functions}
 % ============================================================
 
-\begin{frame}{Loss Functions}
+\begin{frame}{Loss Functions: Supervised Learning}
 The loss function defines \emph{what} we are optimizing.
 \vspace{0.5em}
+
+When we can directly verify the output:
 \begin{itemize}
-\item \textbf{Regression}: MSE $= \frac{1}{n}\sum(y_i - \hat{y}_i)^2$
-\item \textbf{Classification}: cross-entropy $= -\sum y_i \log \hat{y}_i$
-\item \textbf{RL / human feedback}: reward model score, PPO objective
+\item Predict something continuous (position of a ball) $\Rightarrow$ MSE
+\item Predict something discrete (class, next word) $\Rightarrow$ \textbf{cross-entropy loss}
+$$\mathcal{L} = -\sum_i y_i \log \hat{y}_i$$
 \end{itemize}
-\vspace{1em}
-The choice of loss encodes our preferences.
-A model will exploit whatever metric you give it.
+\vspace{0.5em}
+Minimizing cross-entropy makes the model \textbf{well-calibrated}: its output numbers can be interpreted as probabilities.
 \end{frame}
 
-\begin{frame}{Classification and Scoring Rules}
-For classification, we want a \textbf{proper scoring rule}:
-a loss that is minimized when the model outputs the true probabilities.
+\begin{frame}{Loss Functions: Human Preferences}
+We do not always have the ``correct label.''
+Sometimes we only know a pattern outputs should have.
+\vspace{0.5em}
+
+Example: rating text quality, given only pairwise human preferences (``I prefer A over B'').
+\vspace{0.5em}
+
+The preferred text should be rated higher:
+$$\mathcal{L} = -\log \sigma(r_\theta(x_w) - r_\theta(x_l))$$
+\cite{christiano2023a}
+\end{frame}
+
+\begin{frame}{Loss Functions: Reinforcement Learning}
+Sometimes we cannot say what the correct output looks like, but we can identify one when we see it (e.g.\ winning at chess).
+\vspace{0.5em}
+
 \begin{itemize}
-\item Cross-entropy is strictly proper
-\item Accuracy is \emph{not} a proper scoring rule (not differentiable, ties)
-\item Brier score is proper but less commonly used
+\item RL loss functions are more complex
+\item Often involve a learned reward model (from the previous slide) combined with a policy objective
 \end{itemize}
-\vspace{1em}
-If your loss is not proper, the model has incentive to output miscalibrated probabilities.
 \end{frame}
 
 \begin{frame}{Train Loss vs.\ Test Loss}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\textbf{Underfitting}
-\begin{itemize}
-\item High train loss, high test loss
-\item Model too simple or undertrained
-\end{itemize}
+% TODO: add overfitting/underfitting plot
 \vspace{1em}
-\textbf{Overfitting}
-\begin{itemize}
-\item Low train loss, high test loss
-\item Model memorizes training data
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\textbf{Good fit}
-\begin{itemize}
-\item Low train loss, low test loss
-\item Generalizes to unseen data
-\end{itemize}
-\vspace{1em}
-\textbf{A note on sparsity}: regularization (L1, L2, dropout) can help prevent overfitting by constraining the model.
-\end{column}
-\end{columns}
-\end{frame}
-
-% ============================================================
-\section{Parameters and Optimizers}
-% ============================================================
-
-\begin{frame}{Parameters, Activations, Hyperparameters}
 \begin{description}
-\item[Parameters] learned weights, updated by the optimizer ($\theta$)
-\item[Activations] intermediate outputs during the forward pass
-\item[Hyperparameters] choices made \emph{before} training: learning rate, batch size, architecture
+\item[Underfitting] high train loss, high test loss (model too simple or undertrained)
+\item[Overfitting] low train loss, high test loss (model memorizes training data)
+\item[Good fit] both low (generalizes to unseen data)
 \end{description}
 \vspace{1em}
-Parameters are what the model learns.
-Hyperparameters are what \emph{you} choose.
+Regularization (L1, L2, dropout) constrains the model to reduce overfitting.
 \end{frame}
 
-\begin{frame}{SGD}
-The simplest optimizer.
-Each step subtracts the gradient scaled by the learning rate:
+% ============================================================
+\section{Optimizers}
+% ============================================================
+
+\begin{frame}{Optimizers}
+We have a gradient.
+Which direction do we step?
+\end{frame}
+
+\begin{frame}{Stochastic Gradient Descent}
 $$\theta_{t+1} = \theta_t - \alpha \, \nabla_\theta \mathcal{L}$$
 \begin{itemize}
+\item $\alpha$: learning rate (hyperparameter)
 \item Simple and robust
-\item Can be slow in narrow valleys (oscillates across, crawls along)
+\item Can be slow: oscillates across narrow valleys, crawls along them
 \end{itemize}
+\vspace{1em}
+% TODO: add picture of descent with too-small and too-large learning rate
 \end{frame}
 
 \begin{frame}{Momentum}
-Keep a running velocity to smooth out noisy gradients:
-$$v_{t+1} = \beta \, v_t + (1-\beta) \, \nabla_\theta \mathcal{L}$$
+$$v_{t+1} = \beta \, v_t + (1 - \beta) \, \nabla_\theta \mathcal{L}$$
 $$\theta_{t+1} = \theta_t - \alpha \, v_{t+1}$$
 \begin{itemize}
+\item Keeps a running velocity, like a ball rolling downhill
 \item Accelerates through flat regions
 \item Dampens oscillations in steep directions
-\item Think of a ball rolling downhill, retaining velocity
+\item Can roll over small local minima
 \end{itemize}
-\end{frame}
-
-\begin{frame}{RMSProp}
-Adapt the learning rate per parameter using a running average of squared gradients:
-$$r_{t+1} = \beta \, r_t + (1-\beta) \, g_t^2$$
-$$\theta_{t+1} = \theta_t - \frac{\alpha}{\sqrt{r_{t+1}} + \epsilon} \, g_t$$
-\begin{itemize}
-\item Large gradients $\Rightarrow$ smaller effective step
-\item Small gradients $\Rightarrow$ larger effective step
-\item Handles parameters on different scales
-\end{itemize}
+\vspace{1em}
+% TODO: add picture of momentum rolling over a local minimum
 \end{frame}
 
 \begin{frame}{Adam = Momentum + RMSProp}
@@ -224,71 +235,91 @@ $$m_{t+1} = \beta_1 m_t + (1-\beta_1) g_t \qquad v_{t+1} = \beta_2 v_t + (1-\bet
 $$\hat{m} = \frac{m_{t+1}}{1-\beta_1^{t+1}} \qquad \hat{v} = \frac{v_{t+1}}{1-\beta_2^{t+1}}$$
 $$\theta_{t+1} = \theta_t - \alpha \frac{\hat{m}}{\sqrt{\hat{v}} + \epsilon}$$
 \begin{itemize}
-\item Bias correction compensates for zero initialization of $m, v$
+\item Adaptive per-parameter learning rates + momentum
 \item Default choice for most deep learning
-\item Typical defaults: $\beta_1=0.9$, $\beta_2=0.999$, $\epsilon=10^{-8}$
+\item Typical: $\beta_1=0.9$, $\beta_2=0.999$, $\epsilon=10^{-8}$
 \end{itemize}
 \end{frame}
 
 \begin{frame}{}
 \centering
 \Large \textbf{Exercise 2: Implement Optimizers} \\[1em]
-\normalsize 25 minutes \\[0.5em]
-\small Implement SGD, Momentum, RMSProp, and Adam from scratch. \\
-Visualize their trajectories on Rosenbrock's banana function.
+\normalsize 25 minutes
+% TODO: add Colab link and QR code
 \end{frame}
 
 % ============================================================
 \section{Architectures}
 % ============================================================
 
+\begin{frame}{The MLP}
+% TODO: add diagram of a simple MLP
+\vspace{1em}
+\begin{itemize}
+\item Input $\rightarrow$ hidden layer $\rightarrow$ output
+\item Without a hidden layer, we can only represent linear functions
+\item The hidden layer with a nonlinearity lets us express richer functions
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Activation Functions}
 Without nonlinearities, stacking linear layers just gives another linear layer.
 \vspace{0.5em}
 \begin{itemize}
-\item \textbf{ReLU}: $\max(0, x)$, simple and effective, can ``die'' (zero gradient)
-\item \textbf{GELU}: smooth approximation of ReLU, used in transformers
+\item \textbf{ReLU}: $\max(0, x)$, simple and effective
+\item \textbf{GELU}: smooth approximation, used in transformers
 \item \textbf{Sigmoid/Tanh}: saturate at extremes, mostly historical
 \end{itemize}
-\vspace{1em}
-Activation functions are what make neural networks nonlinear.
 \end{frame}
 
 \begin{frame}{Universal Approximation}
 \textbf{Theorem} (Cybenko, Hornik et al.):
-A single hidden layer neural network with nonlinear activations can approximate any continuous function on a compact set to arbitrary precision.
+A single hidden layer with nonlinear activations can approximate any continuous function on a compact set to arbitrary precision.
 \vspace{1em}
 \begin{itemize}
-\item This is an existence result, not a practical recipe
+\item Existence result, not a practical recipe
 \item Says nothing about how many neurons you need
-\item Deeper networks are exponentially more efficient for many function classes
+\item In practice, deeper is much more efficient
 \end{itemize}
 \end{frame}
 
-\begin{frame}{The Deep Learning Recipe}
-In practice, deep learning works by \textbf{repeating simple building blocks}:
+\begin{frame}{Depth: Stacking Layers}
+We can more easily compute things if we compute them in multiple steps.
 \vspace{0.5em}
 \begin{itemize}
-\item Linear $\rightarrow$ Nonlinearity $\rightarrow$ Linear $\rightarrow$ Nonlinearity $\rightarrow \cdots$
-\item Each block refines the representation
-\item The architecture determines which symmetries are built in
+\item Example: classifying a dog is easier if early layers detect ears and snouts, later layers combine them into ``head''
+\item Models have layers that mostly look the same but learn different things
+\item The deep learning recipe: repeat a simple block many times
 \end{itemize}
-\vspace{1em}
+\vspace{0.5em}
 Over/underparameterization:
 \begin{itemize}
-\item Too few parameters $\Rightarrow$ underfitting (cannot represent the function)
-\item Too many parameters $\Rightarrow$ can memorize, but modern deep learning often still generalizes (double descent)
+\item Too few parameters $\Rightarrow$ cannot represent the function
+\item Too many $\Rightarrow$ can memorize, but modern networks often still generalize
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Residual Connections}
+Deep networks suffer from \textbf{vanishing gradients}: the chain rule often makes gradients go to zero through many layers.
+\vspace{0.5em}
+
+Fix: add a skip connection so every layer can start learning something.
+$$x_{l+1} = x_l + f(x_l)$$
+\begin{itemize}
+\item Gradient through the skip is exactly 1
+\item Network only needs to learn the \emph{residual} $f(x_l)$
+\item Enables training networks with hundreds of layers
+\end{itemize}
+\vspace{0.5em}
+% TODO: add diagram of residual stream with blocks feeding in/out
 \end{frame}
 
 \begin{frame}{Architecture Encodes Symmetry}
-The right architecture makes use of known structure in the data:
-\vspace{1em}
-\begin{description}
-\item[Translation invariance] $\Rightarrow$ Convolutional Neural Networks (images)
-\item[Permutation invariance] $\Rightarrow$ Attention / Transformers (sequences, sets)
-\item[Known physics] $\Rightarrow$ Equivariant networks, Hamiltonian NNs
-\end{description}
+The right architecture exploits structure in the data.
+\vspace{0.5em}
+
+Example: in an image, a dog ear looks the same regardless of position.
+We need a detector that is \textbf{translation invariant}, so we should not learn a separate detector for every location.
 \vspace{1em}
 An architecture that respects a symmetry needs fewer parameters and less data to learn the same function.
 \end{frame}
@@ -298,86 +329,68 @@ An architecture that respects a symmetry needs fewer parameters and less data to
 \item A small kernel slides across the input (weight sharing)
 \item Same features detected regardless of position
 \item Hierarchy: edges $\rightarrow$ textures $\rightarrow$ parts $\rightarrow$ objects
-\item Pooling reduces spatial dimensions progressively
 \end{itemize}
 \vspace{1em}
-Key insight: a cat in the top-left should activate the same detector as a cat in the bottom-right.
+% TODO: add gif/animation of convolution sliding over an image
 \end{frame}
 
 \begin{frame}{Transformers (Preview)}
+Text has a similar symmetry: each word is similar, but understanding requires long-range connections, not just neighbors.
+\vspace{0.5em}
 \begin{itemize}
-\item Input: sequence of token embeddings
 \item \textbf{Self-attention}: each token attends to all other tokens
-$$\text{Attention}(Q, K, V) = \text{softmax}\!\left(\frac{QK^T}{\sqrt{d_k}}\right) V$$
 \item Repeated blocks of: attention $\rightarrow$ feedforward $\rightarrow$ residual connection
+\item Dominant architecture for language (and increasingly vision, audio, \ldots)
 \item We will go much deeper in the afternoon session
 \end{itemize}
-\end{frame}
-
-\begin{frame}{Residual Connections}
-Deep networks suffer from \textbf{vanishing gradients}: gradients shrink exponentially with depth.
 \vspace{0.5em}
-
-Residual connections provide a direct path for gradients:
-$$x_{l+1} = x_l + f(x_l)$$
-\begin{itemize}
-\item The gradient through the skip connection is exactly 1
-\item The network only needs to learn the \emph{residual} $f(x_l)$
-\item Enables training networks with hundreds of layers
-\end{itemize}
+% TODO: add gif/animation of transformer attention
 \end{frame}
 
 \begin{frame}{}
 \centering
-\Large \textbf{Exercise 3: Build a Simple Architecture} \\[1em]
+\Large \textbf{Exercise 3: Build Simple Architectures} \\[1em]
 \normalsize 15 minutes
+% TODO: add Colab link and QR code
 \end{frame}
 
 % ============================================================
 \section{Hyperparameter Optimization}
 % ============================================================
 
-\begin{frame}{Hyperparameters Matter}
-Performance is often more sensitive to hyperparameters than to architecture.
-\vspace{1em}
+\begin{frame}{Hyperparameters}
+Any property not set by gradient descent is set by the experimenter:
 \begin{itemize}
-\item Learning rate: most important single hyperparameter
-\item Batch size, weight decay, learning rate schedule
-\item Architecture choices: depth, width, number of heads
+\item Model architecture (depth, width, \ldots)
+\item Batch size, number of epochs
+\item Learning rate, momentum, and other optimizer settings
 \end{itemize}
-\vspace{1em}
-Finding good hyperparameters is an outer optimization loop around training.
 \end{frame}
 
-\begin{frame}{Hyperparameter Sweeps}
+\begin{frame}{Finding Good Hyperparameters}
 \begin{itemize}
-\item \textbf{Grid search}: try all combinations (exponential cost)
-\item \textbf{Random search}: sample randomly (often better than grid)
-\item \textbf{Bayesian optimization}: use a surrogate model to guide search
+\item Some we have figured out once and reuse (e.g.\ $\beta_1 = 0.9$)
+\item Some we sweep over: run many times, pick the best (typically learning rate)
+\item Some follow \textbf{scaling laws}: cheap small experiments predict large-scale performance
 \end{itemize}
-\vspace{1em}
-Tools: Weights \& Biases sweeps, Optuna, Ray Tune
 \end{frame}
 
 \begin{frame}{Scaling Laws}
-Neural network performance follows predictable power laws:
 $$L(N) \propto N^{-\alpha}$$
-where $N$ is the number of parameters (or data points, or compute).
-\vspace{0.5em}
 \begin{itemize}
-\item Loss decreases smoothly as a power law with scale
-\item Known scaling laws for LLMs: Kaplan et al., Chinchilla (Hoffmann et al.)
+\item Loss decreases as a power law with model size, data, or compute
 \item Enables predicting performance before training the full model
-\item Compute-optimal training: balance model size and data
+\item Compute-optimal training: balance model size and data % TODO: add Chinchilla citation
 \end{itemize}
+\vspace{1em}
+% TODO: add Chinchilla scaling law plot
 \end{frame}
 
 \begin{frame}{}
 \centering
 \Large \textbf{Exercise 4: Hyperparameter Tuning} \\[1em]
-\normalsize Until lunch \\[0.5em]
-\small Tune hyperparameters on the spiral dataset. \\
-Compare results with the group.
+\normalsize Until lunch
+% TODO: add Colab link and QR code
 \end{frame}
 
 % ============================================================
