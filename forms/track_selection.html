@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 1 Track Selection</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.6; }
+  .container { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .subtitle { color: #555; margin-bottom: 2rem; font-size: 1.05rem; }
+
+  .question { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .question .q-title { font-weight: 600; margin-bottom: 0.75rem; }
+  .question .hint { font-weight: 400; color: #666; font-size: 0.9rem; margin-top: -0.25rem; margin-bottom: 0.75rem; }
+  .unanswered { border: 2px solid #ef4444; }
+
+  .options label { display: block; padding: 0.5rem 0.75rem; margin: 0.25rem 0; border-radius: 6px; cursor: pointer; transition: background 0.15s; }
+  .options label:hover { background: #f0f0f0; }
+  .options input[type="radio"] { margin-right: 0.5rem; }
+
+  code { background: #f0f0f0; padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f0f0f0; padding: 0.75rem 1rem; border-radius: 6px; overflow-x: auto; margin: 0.5rem 0; font-size: 0.85em; line-height: 1.5; }
+
+  /* Sortable drag-and-drop */
+  .sortable-list { list-style: none; padding: 0; }
+  .sortable-item {
+    display: flex; align-items: center; gap: 0.75rem;
+    padding: 0.6rem 0.75rem; margin: 0.35rem 0;
+    background: #f8f9fa; border: 2px solid #e2e8f0; border-radius: 6px;
+    cursor: grab; user-select: none; transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .sortable-item:hover { border-color: #94a3b8; }
+  .sortable-item:active { cursor: grabbing; }
+  .sortable-item.dragging { opacity: 0.4; border-style: dashed; }
+  .sortable-item.drag-over { border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,0.2); }
+  .sortable-item .grip { color: #94a3b8; font-size: 1.1rem; flex-shrink: 0; }
+  .sortable-item .step-num {
+    background: #e2e8f0; color: #475569; border-radius: 50%;
+    width: 1.5rem; height: 1.5rem; display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem; font-weight: 700; flex-shrink: 0;
+  }
+  .sortable-item code { background: none; padding: 0; font-size: 0.9em; }
+  .drag-clone {
+    position: fixed; pointer-events: none; z-index: 1000; opacity: 0.85;
+    transform: rotate(1deg) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  /* Matching exercise */
+  .chip-pool { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; min-height: 2.5rem; }
+  .chip {
+    padding: 0.4rem 0.9rem; border-radius: 20px; font-weight: 600; font-size: 0.9em;
+    cursor: pointer; user-select: none; transition: all 0.15s;
+    border: 2px solid #e2e8f0; background: #f8f9fa;
+  }
+  .chip:hover { border-color: #94a3b8; }
+  .chip.selected { border-color: #2563eb; background: #eff6ff; color: #2563eb; }
+  .chip.placed { opacity: 0.3; pointer-events: none; }
+  .code-targets { display: flex; flex-direction: column; gap: 0.75rem; }
+  .code-target { border: 2px solid #e2e8f0; border-radius: 8px; overflow: hidden; transition: border-color 0.15s; cursor: pointer; }
+  .code-target:hover { border-color: #94a3b8; }
+  .code-target.has-chip { border-color: #2563eb; }
+  .code-target .drop-zone {
+    padding: 0.4rem 0.75rem; background: #f8f9fa; border-bottom: 1px solid #e2e8f0;
+    font-size: 0.85rem; color: #94a3b8; min-height: 2.2rem; display: flex; align-items: center;
+  }
+  .code-target .drop-zone .chip { opacity: 1; pointer-events: auto; margin: 0; }
+  .code-target pre { margin: 0; border-radius: 0; }
+
+  .submit-btn { display: block; width: 100%; padding: 1rem; margin-top: 1.5rem; background: #2563eb; color: #fff; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+  .submit-btn:hover { background: #1d4ed8; }
+
+  .result { display: none; background: #fff; border-radius: 8px; padding: 2rem; margin-top: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); text-align: center; }
+  .result h2 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .result .score { color: #555; font-size: 0.95rem; margin-bottom: 1rem; }
+  .result .track { padding: 1rem 1.5rem; border-radius: 8px; margin: 1rem 0; }
+  .track-a { background: #eff6ff; border: 2px solid #2563eb; }
+  .track-b { background: #f0fdf4; border: 2px solid #16a34a; }
+  .track h3 { margin-bottom: 0.5rem; }
+  .track ul { text-align: left; margin: 0.5rem 0 0 1.5rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Day 1: Morning Track Selection</h1>
+  <p class="subtitle">
+    This quiz helps you pick the right morning track. It mixes knowledge questions
+    with experience questions to give a balanced recommendation. Takes ~3 minutes.
+  </p>
+
+  <form id="quiz">
+    <!-- Q1: MC -->
+    <div class="question" data-q="q1">
+      <p class="q-title">1. What does <code>loss.backward()</code> do in PyTorch?</p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="0a"> Decreases the loss value by one optimization step</label>
+        <label><input type="radio" name="q1" value="1"> Computes gradients of the loss w.r.t. all parameters with <code>requires_grad=True</code></label>
+        <label><input type="radio" name="q1" value="0b"> Updates the model weights using the computed gradients</label>
+        <label><input type="radio" name="q1" value="0c"> Resets the computation graph for the next forward pass</label>
+      </div>
+    </div>
+
+    <!-- Q2: Drag-and-drop -->
+    <div class="question" data-q="q2">
+      <p class="q-title">2. Drag the steps of a training loop into the correct order.</p>
+      <div class="sortable-list" id="sortable-training"></div>
+    </div>
+
+    <!-- Q3: MC -->
+    <div class="question" data-q="q3">
+      <p class="q-title">3. What problem does the Adam optimizer address compared to vanilla SGD?</p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="0a"> Adam uses less memory than SGD</label>
+        <label><input type="radio" name="q3" value="0b"> Adam guarantees convergence to the global minimum</label>
+        <label><input type="radio" name="q3" value="1"> Adam adapts the learning rate per parameter using running estimates of gradient moments</label>
+        <label><input type="radio" name="q3" value="0c"> Adam removes the need to set a learning rate entirely</label>
+      </div>
+    </div>
+
+    <!-- Q4: MC -->
+    <div class="question" data-q="q4">
+      <p class="q-title">4. Training loss keeps decreasing but validation loss starts going up after epoch 10. What is happening?</p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="0a"> The learning rate is too low</label>
+        <label><input type="radio" name="q4" value="0b"> The model is underfitting</label>
+        <label><input type="radio" name="q4" value="1"> The model is overfitting</label>
+        <label><input type="radio" name="q4" value="0c"> The optimizer has a bug</label>
+      </div>
+    </div>
+
+    <!-- Q5: Matching -->
+    <div class="question" data-q="q5">
+      <p class="q-title">5. Match each architecture name to its PyTorch implementation.</p>
+      <p class="hint">Click a name, then click the code block it belongs to. Click a placed name to remove it.</p>
+      <div class="chip-pool" id="chip-pool"></div>
+      <div class="code-targets" id="code-targets"></div>
+    </div>
+
+    <!-- Q6: Experience -->
+    <div class="question" data-q="q6">
+      <p class="q-title">6. Have you written a training loop in PyTorch yourself (not just run existing code)?</p>
+      <div class="options">
+        <label><input type="radio" name="q6" value="2"> Yes, multiple times for different tasks</label>
+        <label><input type="radio" name="q6" value="1"> Once or twice, or I've substantially modified existing ones</label>
+        <label><input type="radio" name="q6" value="0"> No, but I've run other people's training scripts</label>
+        <label><input type="radio" name="q6" value="0b"> No experience with PyTorch training</label>
+      </div>
+    </div>
+
+    <!-- Q7: Experience -->
+    <div class="question" data-q="q7">
+      <p class="q-title">7. Have you used experiment tracking tools (WandB, TensorBoard, MLflow, etc.)?</p>
+      <div class="options">
+        <label><input type="radio" name="q7" value="2"> Yes, I regularly log metrics, hyperparameters, and artifacts</label>
+        <label><input type="radio" name="q7" value="1"> I've used them but not extensively</label>
+        <label><input type="radio" name="q7" value="0"> No</label>
+      </div>
+    </div>
+
+    <!-- Q8: Experience -->
+    <div class="question" data-q="q8">
+      <p class="q-title">8. Have you trained a model on a remote GPU (cloud provider, HPC cluster, etc.)?</p>
+      <div class="options">
+        <label><input type="radio" name="q8" value="2"> Yes, I'm comfortable with SSH, environment setup, and job scheduling</label>
+        <label><input type="radio" name="q8" value="1"> I've done it but it was painful / I followed a tutorial</label>
+        <label><input type="radio" name="q8" value="0"> No, only local / Colab</label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Get My Track Recommendation</button>
+  </form>
+
+  <div class="result" id="result">
+    <h2 id="result-title"></h2>
+    <p class="score" id="result-score"></p>
+    <div id="result-track"></div>
+    <p style="margin-top:1.25rem; color:#555; font-size:0.9rem;">
+      This is a recommendation, not a rule. If you feel strongly that the other track is a better fit, go for it.
+    </p>
+  </div>
+</div>
+
+<script>
+// ── Data ──
+
+const TRAINING_STEPS = [
+  { id: 0, code: 'optimizer.zero_grad()' },
+  { id: 1, code: 'output = model(input_batch)' },
+  { id: 2, code: 'loss = loss_fn(output, target)' },
+  { id: 3, code: 'loss.backward()' },
+  { id: 4, code: 'optimizer.step()' },
+];
+
+const ARCHITECTURES = [
+  {
+    name: 'MLP',
+    code: 'nn.Sequential(\n    nn.Linear(784, 256),\n    nn.ReLU(),\n    nn.Linear(256, 10)\n)',
+  },
+  {
+    name: 'CNN',
+    code: 'nn.Sequential(\n    nn.Conv2d(1, 32, kernel_size=3),\n    nn.ReLU(),\n    nn.MaxPool2d(2),\n    nn.Flatten(),\n    nn.Linear(32 * 13 * 13, 10)\n)',
+  },
+  {
+    name: 'LSTM',
+    code: '# __init__:\nself.rnn = nn.LSTM(28, 128, batch_first=True)\nself.fc = nn.Linear(128, 10)\n\n# forward:\nout, (h, c) = self.rnn(x)\nreturn self.fc(h[-1])',
+  },
+  {
+    name: 'Self-Attention',
+    code: 'Q, K, V = self.W_q(x), self.W_k(x), self.W_v(x)\nweights = F.softmax(\n    Q @ K.transpose(-2, -1) / d_k**0.5, dim=-1\n)\nreturn weights @ V',
+  },
+];
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// ── Sortable (Q2) ──
+
+const sortableList = document.getElementById('sortable-training');
+let draggedItem = null;
+
+function updateStepNumbers() {
+  sortableList.querySelectorAll('.step-num').forEach((el, i) => el.textContent = i + 1);
+}
+
+function initSortable() {
+  let shuffled = shuffle(TRAINING_STEPS);
+  // Make sure it's not accidentally in the right order
+  while (shuffled.every((s, i) => s.id === i)) shuffled = shuffle(TRAINING_STEPS);
+
+  sortableList.innerHTML = '';
+  shuffled.forEach((step, i) => {
+    const div = document.createElement('div');
+    div.className = 'sortable-item';
+    div.draggable = true;
+    div.dataset.id = step.id;
+    div.innerHTML = '<span class="grip">\u2847</span><span class="step-num">' + (i + 1) + '</span><code>' + step.code + '</code>';
+    sortableList.appendChild(div);
+  });
+
+  // Desktop drag-and-drop
+  sortableList.querySelectorAll('.sortable-item').forEach(item => {
+    item.addEventListener('dragstart', e => {
+      draggedItem = item;
+      item.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+    item.addEventListener('dragend', () => {
+      item.classList.remove('dragging');
+      sortableList.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+      updateStepNumbers();
+      draggedItem = null;
+    });
+    item.addEventListener('dragover', e => {
+      e.preventDefault();
+      if (item !== draggedItem) item.classList.add('drag-over');
+    });
+    item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+    item.addEventListener('drop', e => {
+      e.preventDefault();
+      if (!draggedItem || item === draggedItem) return;
+      const items = [...sortableList.children];
+      const from = items.indexOf(draggedItem);
+      const to = items.indexOf(item);
+      if (from < to) sortableList.insertBefore(draggedItem, item.nextSibling);
+      else sortableList.insertBefore(draggedItem, item);
+      item.classList.remove('drag-over');
+      updateStepNumbers();
+    });
+
+    // Touch drag
+    let clone = null;
+    item.addEventListener('touchstart', e => {
+      draggedItem = item;
+      const rect = item.getBoundingClientRect();
+      clone = item.cloneNode(true);
+      clone.className = 'sortable-item drag-clone';
+      clone.style.width = rect.width + 'px';
+      clone.style.left = rect.left + 'px';
+      clone.style.top = rect.top + 'px';
+      document.body.appendChild(clone);
+      item.classList.add('dragging');
+    }, { passive: true });
+
+    item.addEventListener('touchmove', e => {
+      e.preventDefault();
+      if (!clone) return;
+      const t = e.touches[0];
+      clone.style.top = (t.clientY - 20) + 'px';
+      clone.style.display = 'none';
+      const el = document.elementFromPoint(t.clientX, t.clientY);
+      clone.style.display = '';
+      sortableList.querySelectorAll('.drag-over').forEach(x => x.classList.remove('drag-over'));
+      const target = el && el.closest('.sortable-item');
+      if (target && target !== draggedItem) target.classList.add('drag-over');
+    }, { passive: false });
+
+    item.addEventListener('touchend', e => {
+      if (clone) {
+        const t = e.changedTouches[0];
+        clone.style.display = 'none';
+        const el = document.elementFromPoint(t.clientX, t.clientY);
+        clone.remove();
+        clone = null;
+        const target = el && el.closest('.sortable-item');
+        if (target && target !== draggedItem) {
+          const items = [...sortableList.children];
+          const from = items.indexOf(draggedItem);
+          const to = items.indexOf(target);
+          if (from < to) sortableList.insertBefore(draggedItem, target.nextSibling);
+          else sortableList.insertBefore(draggedItem, target);
+        }
+      }
+      item.classList.remove('dragging');
+      sortableList.querySelectorAll('.drag-over').forEach(x => x.classList.remove('drag-over'));
+      updateStepNumbers();
+      draggedItem = null;
+    });
+  });
+}
+
+function getSortableScore() {
+  const order = [...sortableList.querySelectorAll('.sortable-item')].map(el => +el.dataset.id);
+  return order.every((v, i) => v === i) ? 1 : 0;
+}
+
+initSortable();
+
+// ── Matching (Q5) ──
+
+const chipPool = document.getElementById('chip-pool');
+const codeTargets = document.getElementById('code-targets');
+let selectedChip = null;
+const assignments = {};
+
+function initMatching() {
+  const shuffledNames = shuffle(ARCHITECTURES.map(a => a.name));
+  const shuffledCodes = shuffle(ARCHITECTURES);
+
+  chipPool.innerHTML = '';
+  shuffledNames.forEach(name => {
+    const chip = document.createElement('span');
+    chip.className = 'chip';
+    chip.textContent = name;
+    chip.dataset.name = name;
+    chip.addEventListener('click', () => {
+      if (chip.classList.contains('placed')) return;
+      chipPool.querySelectorAll('.chip').forEach(c => c.classList.remove('selected'));
+      if (selectedChip === chip) { selectedChip = null; return; }
+      chip.classList.add('selected');
+      selectedChip = chip;
+    });
+    chipPool.appendChild(chip);
+  });
+
+  codeTargets.innerHTML = '';
+  shuffledCodes.forEach((arch, i) => {
+    const target = document.createElement('div');
+    target.className = 'code-target';
+    target.dataset.answer = arch.name;
+    target.dataset.idx = i;
+    target.innerHTML = '<div class="drop-zone" data-idx="' + i + '"><span style="color:#94a3b8">Click a name, then click here</span></div><pre>' + arch.code + '</pre>';
+    target.addEventListener('click', e => {
+      // If clicking a placed chip inside this target, unassign it
+      const clickedChip = e.target.closest('.chip');
+      if (clickedChip && target.querySelector('.drop-zone').contains(clickedChip)) {
+        const name = assignments[i];
+        delete assignments[i];
+        const poolChip = chipPool.querySelector('[data-name="' + name + '"]');
+        if (poolChip) poolChip.classList.remove('placed');
+        target.querySelector('.drop-zone').innerHTML = '<span style="color:#94a3b8">Click a name, then click here</span>';
+        target.classList.remove('has-chip');
+        return;
+      }
+      if (!selectedChip) return;
+      // If slot already taken, return old chip
+      if (assignments[i] !== undefined) {
+        const oldName = assignments[i];
+        const oldPoolChip = chipPool.querySelector('[data-name="' + oldName + '"]');
+        if (oldPoolChip) oldPoolChip.classList.remove('placed');
+      }
+      const name = selectedChip.dataset.name;
+      assignments[i] = name;
+      selectedChip.classList.remove('selected');
+      selectedChip.classList.add('placed');
+      selectedChip = null;
+      const dz = target.querySelector('.drop-zone');
+      dz.innerHTML = '';
+      const placed = document.createElement('span');
+      placed.className = 'chip';
+      placed.textContent = name;
+      placed.style.cssText = 'border-color:#2563eb; background:#eff6ff; color:#2563eb; cursor:pointer;';
+      dz.appendChild(placed);
+      target.classList.add('has-chip');
+    });
+    codeTargets.appendChild(target);
+  });
+}
+
+function getMatchingScore() {
+  let correct = 0;
+  codeTargets.querySelectorAll('.code-target').forEach(t => {
+    if (assignments[t.dataset.idx] === t.dataset.answer) correct++;
+  });
+  return correct / ARCHITECTURES.length;
+}
+
+initMatching();
+
+// ── Scoring ──
+
+const MC_QS = ['q1', 'q3', 'q4'];
+const EXP_QS = ['q6', 'q7', 'q8'];
+
+document.getElementById('quiz').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.querySelectorAll('.question').forEach(q => q.classList.remove('unanswered'));
+  let ok = true;
+
+  for (const q of [...MC_QS, ...EXP_QS]) {
+    if (!document.querySelector('input[name="' + q + '"]:checked')) {
+      document.querySelector('[data-q="' + q + '"]').classList.add('unanswered');
+      ok = false;
+    }
+  }
+  if (Object.keys(assignments).length < ARCHITECTURES.length) {
+    document.querySelector('[data-q="q5"]').classList.add('unanswered');
+    ok = false;
+  }
+  if (!ok) {
+    document.querySelector('.unanswered').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  // Knowledge: 3 MC (1pt each) + sortable (1pt) + matching (0-1pt) = 5
+  let mcScore = 0;
+  for (const q of MC_QS) {
+    if (document.querySelector('input[name="' + q + '"]:checked').value === '1') mcScore++;
+  }
+  const knowledgeScore = mcScore + getSortableScore() + getMatchingScore();
+
+  // Experience: 3 questions, 0-2pt each = 6
+  let expScore = 0;
+  for (const q of EXP_QS) {
+    expScore += parseInt(document.querySelector('input[name="' + q + '"]:checked').value) || 0;
+  }
+
+  // Normalize knowledge (0-5) to same scale as experience (0-6)
+  const total = knowledgeScore * 1.2 + expScore;
+
+  const knowledgePct = Math.round((knowledgeScore / 5) * 100);
+  const expPct = Math.round((expScore / 6) * 100);
+
+  document.getElementById('result-score').textContent = 'Knowledge: ' + knowledgePct + '% \u00b7 Practical experience: ' + expPct + '%';
+
+  const titleEl = document.getElementById('result-title');
+  const trackEl = document.getElementById('result-track');
+
+  if (total >= 7) {
+    titleEl.textContent = 'Track B: Practical ML Engineering';
+    trackEl.className = 'track track-b';
+    trackEl.innerHTML = '<h3>What you\'ll cover:</h3><ul><li>Experiment tracking with Weights &amp; Biases</li><li>Renting and managing cloud GPUs (RunPod)</li><li>Hyperparameter sweeps at scale</li><li>End-to-end experiment workflow</li></ul>';
+  } else {
+    titleEl.textContent = 'Track A: ML Foundations';
+    trackEl.className = 'track track-a';
+    trackEl.innerHTML = '<h3>What you\'ll cover:</h3><ul><li>PyTorch tensors and autograd</li><li>Writing training loops from scratch</li><li>Optimizers, loss functions, and learning rates</li><li>Training, validation, and debugging common issues</li></ul>';
+  }
+
+  const r = document.getElementById('result');
+  r.style.display = 'block';
+  r.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+</script>
+</body>
+</html>
