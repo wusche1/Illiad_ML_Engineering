@@ -21,12 +21,28 @@
 % ============================================================
 
 \begin{frame}{Concepts in Machine Learning}
-Four ingredients:
+\begin{center}
+\begin{tikzpicture}[
+  box/.style={rectangle, draw, thick, rounded corners=3pt, minimum width=2cm, minimum height=0.7cm, font=\small},
+  arr/.style={->, very thick, gray!70},
+]
+  \node[box, fill=blue!15] (data) at (0, 0) {Data};
+  \node[box, fill=green!15] (model) at (3.5, 0) {Model};
+  \node[box, fill=red!15] (loss) at (7, 0) {Loss};
+  \node[box, fill=orange!15] (opt) at (3.5, -1.8) {Optimizer};
+
+  \draw[arr] (data) -- (model) node[midway, above, font=\scriptsize] {input};
+  \draw[arr] (model) -- (loss) node[midway, above, font=\scriptsize] {prediction};
+  \draw[arr] (loss) -- (opt) node[midway, right, font=\scriptsize] {gradient};
+  \draw[arr] (opt) -- (model) node[midway, left, font=\scriptsize] {update};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.3em}
 \begin{description}
-\item[Data] some input to a task we want an AI to do
-\item[Model] gets data, outputs something (a classification, an action, a prediction)
+\item[Data] input to a task we want an AI to do
+\item[Model] gets data, outputs a prediction
 \item[Loss function] quantifies how well the model did
-\item[Optimizer] updates the model to do the task better
+\item[Optimizer] updates the model to do better
 \end{description}
 \end{frame}
 
@@ -116,16 +132,53 @@ rearrange(x, 'b s (h d) -> b h s d', h=n_heads)
 \end{frame}
 
 \begin{frame}{Autograd and the Computation Graph}
-Tensors keep track of a computational graph as you operate on them.
-\vspace{0.5em}
+\begin{columns}[c]
+\begin{column}{0.55\textwidth}
 \begin{enumerate}
-\item Build up expressions from tensors with \texttt{requires\_grad=True}
-\item Call \texttt{.backward()} on a scalar result
-\item Every tensor in the graph can now access its gradient via \texttt{.grad}
+\item Build expressions from tensors with \texttt{requires\_grad=True}
+\item Call \texttt{.backward()} on a scalar
+\item Access gradients via \texttt{.grad}
 \end{enumerate}
-\vspace{1em}
+\vspace{0.5em}
 You never write derivatives by hand.
-The graph is rebuilt every forward pass (``define-by-run'').
+The graph is rebuilt every forward pass.
+\end{column}
+\begin{column}{0.45\textwidth}
+\begin{center}
+\begin{tikzpicture}[
+  node distance=0.8cm,
+  op/.style={circle, draw, thick, fill=orange!20, minimum size=7mm, font=\scriptsize},
+  var/.style={rectangle, draw, thick, fill=blue!10, rounded corners=2pt, minimum width=1cm, minimum height=5mm, font=\scriptsize},
+  arr/.style={->, thick},
+]
+  % Forward pass (bottom to top)
+  \node[var] (x) at (0, 0) {$x$};
+  \node[var] (w) at (2, 0) {$W$};
+  \node[op] (mul) at (1, 1.2) {$\times$};
+  \node[var] (b) at (2.5, 1.2) {$b$};
+  \node[op] (add) at (1.8, 2.4) {$+$};
+  \node[op] (relu) at (1.8, 3.5) {ReLU};
+  \node[var] (L) at (1.8, 4.6) {$\mathcal{L}$};
+
+  \draw[arr] (x) -- (mul);
+  \draw[arr] (w) -- (mul);
+  \draw[arr] (mul) -- (add);
+  \draw[arr] (b) -- (add);
+  \draw[arr] (add) -- (relu);
+  \draw[arr] (relu) -- (L);
+
+  % Backward arrows (faint red, right side)
+  \draw[->, thick, red!50, dashed] (L.east) -- ++(0.3,0) |- (relu.east);
+  \draw[->, thick, red!50, dashed] (relu.east) -- ++(0.5,0) |- (add.east);
+  \draw[->, thick, red!50, dashed] (add.west) -- ++(-0.5,0) |- (mul.west);
+
+  % Labels
+  \node[font=\tiny, blue!60!black, left] at (-0.2, 2.3) {forward $\uparrow$};
+  \node[font=\tiny, red!60!black, right] at (2.8, 2.3) {$\downarrow$ backward};
+\end{tikzpicture}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}[fragile]{Devices}
@@ -186,15 +239,36 @@ Sometimes we cannot say what the correct output looks like, but we can identify 
 \end{frame}
 
 \begin{frame}{Train Loss vs.\ Test Loss}
-% TODO: add overfitting/underfitting plot
-\vspace{1em}
-\begin{description}
-\item[Underfitting] high train loss, high test loss (model too simple or undertrained)
-\item[Overfitting] low train loss, high test loss (model memorizes training data)
-\item[Good fit] both low (generalizes to unseen data)
-\end{description}
-\vspace{1em}
-Regularization (L1, L2, dropout) constrains the model to reduce overfitting.
+\begin{center}
+\begin{tikzpicture}[xscale=1.4, yscale=1.2]
+  \draw[->] (0, 0) -- (7.5, 0) node[right, font=\small] {Training time};
+  \draw[->] (0, 0) -- (0, 3.5) node[above, font=\small] {Loss};
+
+  % Train loss (always decreasing)
+  \draw[very thick, blue!70!black, domain=0.3:7, samples=80]
+    plot (\x, {2.8*exp(-0.5*\x) + 0.15});
+  \node[blue!70!black, font=\small, right] at (7.1, 0.2) {train};
+
+  % Test loss (U-shaped)
+  \draw[very thick, red!70!black, domain=0.3:7, samples=80]
+    plot (\x, {2.8*exp(-0.5*\x) + 0.08*(\x-1)*(\x-1) + 0.3});
+  \node[red!70!black, font=\small, right] at (7.1, 2.8) {test};
+
+  % Regions
+  \draw[dashed, gray] (2.2, 0) -- (2.2, 3.3);
+  \draw[dashed, gray] (4.5, 0) -- (4.5, 3.3);
+
+  \node[font=\scriptsize, gray, align=center] at (1.1, 3.2) {underfit};
+  \node[font=\scriptsize, green!50!black, align=center] at (3.35, 3.2) {good fit};
+  \node[font=\scriptsize, red!60!black, align=center] at (5.8, 3.2) {overfit};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.5em}
+\begin{itemize}
+\item \textbf{Underfitting}: both losses high (model too simple or undertrained)
+\item \textbf{Overfitting}: train loss low, test loss rises (model memorizes)
+\item Regularization (L2, dropout) constrains the model to delay overfitting
+\end{itemize}
 \end{frame}
 
 % ============================================================
@@ -355,45 +429,179 @@ $$\theta_{t+1} = \theta_t - \alpha \frac{\hat{m}}{\sqrt{\hat{v}} + \epsilon}$$
 % ============================================================
 
 \begin{frame}{The MLP}
-% TODO: add diagram of a simple MLP
-\vspace{1em}
+\begin{center}
+\begin{tikzpicture}[
+  node distance=1.6cm and 2.2cm,
+  neuron/.style={circle, draw, thick, minimum size=8mm, inner sep=0pt},
+  input/.style={neuron, fill=blue!15},
+  hidden/.style={neuron, fill=orange!20},
+  output/.style={neuron, fill=green!20},
+  conn/.style={->, thick, gray!60},
+  annot/.style={font=\small\bfseries, text=black!70},
+]
+  % Input layer
+  \foreach \i in {1,2,3} {
+    \node[input] (i\i) at (0, -\i*1.2+2.4) {$x_{\i}$};
+  }
+  % Hidden layer
+  \foreach \j in {1,2,3,4} {
+    \node[hidden] (h\j) at (3, -\j*1.1+2.75) {$h_{\j}$};
+  }
+  % Output layer
+  \foreach \k in {1,2} {
+    \node[output] (o\k) at (6, -\k*1.2+1.8) {$y_{\k}$};
+  }
+  % Connections: input -> hidden
+  \foreach \i in {1,2,3}
+    \foreach \j in {1,2,3,4}
+      \draw[conn] (i\i) -- (h\j);
+  % Connections: hidden -> output
+  \foreach \j in {1,2,3,4}
+    \foreach \k in {1,2}
+      \draw[conn] (h\j) -- (o\k);
+  % Labels
+  \node[annot, above=3mm] at (0, 1.2) {Input};
+  \node[annot, above=3mm] at (3, 1.65) {Hidden};
+  \node[annot, above=3mm] at (6, 0.6) {Output};
+  % Activation annotation
+  \draw[thick, red!70!black, ->, >=stealth] (3, -2.2) -- ++(0.6, 0)
+    node[right, font=\scriptsize, red!70!black] {$\sigma(\cdot)$};
+  \node[font=\scriptsize, red!70!black, below] at (3.3, -2.2) {nonlinearity};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.5em}
 \begin{itemize}
-\item Input $\rightarrow$ hidden layer $\rightarrow$ output
 \item Without a hidden layer, we can only represent linear functions
 \item The hidden layer with a nonlinearity lets us express richer functions
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Activation Functions}
-Without nonlinearities, stacking linear layers just gives another linear layer.
+\begin{frame}[fragile]{The MLP in PyTorch}
+\begin{minted}{python}
+import torch.nn as nn
+
+mlp = nn.Sequential(
+    nn.Linear(3, 128),   # input -> hidden (weights + bias)
+    nn.ReLU(),           # nonlinearity
+    nn.Linear(128, 2),   # hidden -> output
+)
+
+y = mlp(x)  # x: (batch, 3) -> y: (batch, 2)
+\end{minted}
 \vspace{0.5em}
 \begin{itemize}
-\item \textbf{ReLU}: $\max(0, x)$, simple and effective
-\item \textbf{GELU}: smooth approximation, used in transformers
-\item \textbf{Sigmoid/Tanh}: saturate at extremes, mostly historical
+\item \texttt{nn.Linear}: $y = Wx + b$ (learnable $W$, $b$)
+\item \texttt{nn.Sequential}: chain layers into a pipeline
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Activation Functions}
+Without nonlinearities, stacking linear layers just gives another linear layer.
+\vspace{0.3em}
+\begin{center}
+\begin{tikzpicture}[xscale=0.7, yscale=0.9]
+  % ReLU
+  \begin{scope}[shift={(0,0)}]
+    \draw[->] (-2.2, 0) -- (2.4, 0) node[right, font=\tiny] {$x$};
+    \draw[->] (0, -0.5) -- (0, 2.2);
+    \draw[very thick, blue!70!black] (-2, 0) -- (0, 0);
+    \draw[very thick, blue!70!black] (0, 0) -- (2, 2);
+    \node[above, font=\small\bfseries, blue!70!black] at (0, 2.2) {ReLU};
+    \node[below, font=\scriptsize] at (0, -0.7) {$\max(0, x)$};
+  \end{scope}
+  % GELU
+  \begin{scope}[shift={(5.5,0)}]
+    \draw[->] (-2.2, 0) -- (2.4, 0) node[right, font=\tiny] {$x$};
+    \draw[->] (0, -0.5) -- (0, 2.2);
+    % GELU ≈ x * sigmoid(1.702 * x)
+    \draw[very thick, red!70!black, domain=-2:2, samples=80]
+      plot (\x, {\x / (1 + exp(-1.702*\x))});
+    \node[above, font=\small\bfseries, red!70!black] at (0, 2.2) {GELU};
+    \node[below, font=\scriptsize] at (0, -0.7) {$x \cdot \Phi(x)$};
+  \end{scope}
+  % Sigmoid
+  \begin{scope}[shift={(11,0)}]
+    \draw[->] (-2.2, 0) -- (2.4, 0) node[right, font=\tiny] {$x$};
+    \draw[->] (0, -0.5) -- (0, 2.2);
+    \draw[very thick, green!50!black, domain=-2:2, samples=60]
+      plot (\x, {2/(1 + exp(-3*\x))});
+    \draw[dashed, gray, thin] (-2.2, 2) -- (2.4, 2);
+    \node[above, font=\small\bfseries, green!50!black] at (0, 2.2) {Sigmoid};
+    \node[below, font=\scriptsize] at (0, -0.7) {$\frac{1}{1+e^{-x}}$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+\vspace{-0.3em}
+\begin{itemize}
+\item \textbf{ReLU}: simple, effective, standard for MLPs
+\item \textbf{GELU}: smooth, used in transformers
+\item \textbf{Sigmoid}: saturates at extremes, mostly historical
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Universal Approximation}
 \textbf{Theorem} (Cybenko, Hornik et al.):
-A single hidden layer with nonlinear activations can approximate any continuous function on a compact set to arbitrary precision.
-\vspace{1em}
+A single hidden layer can approximate any continuous function on a compact set.
+\begin{center}
+\begin{tikzpicture}[xscale=1.0, yscale=0.8]
+  \draw[->] (-0.3, 0) -- (7.5, 0) node[right, font=\tiny] {$x$};
+  \draw[->] (0, -0.3) -- (0, 3.5);
+  % Target function (smooth curve)
+  \draw[very thick, blue!60!black, domain=0.2:7, samples=100]
+    plot (\x, {1.5 + 1.2*sin(\x*60) + 0.4*cos(\x*120)});
+  \node[blue!60!black, font=\small, right] at (7.1, 2.5) {target $f$};
+  % ReLU piecewise-linear approximation: coarse (6 hinges) to show it's approximate
+  % Sampled from target at wide intervals
+  \draw[very thick, red!70!black, dashed]
+    (0.3, 1.76) -- (1.5, 2.30) -- (3.0, 1.90) -- (4.5, -0.10) --
+    (6.0, 1.90) -- (7.0, 2.34);
+  \node[red!70!black, font=\small, right] at (7.1, 1.5) {ReLU sum};
+  \node[red!70!black, font=\scriptsize, right] at (7.1, 1.0) {(6 neurons)};
+  % Hinge points
+  \foreach \px/\py in {0.3/1.76, 1.5/2.30, 3.0/1.90, 4.5/-0.10, 6.0/1.90, 7.0/2.34} {
+    \fill[red!60!black] (\px, \py) circle (2pt);
+  }
+\end{tikzpicture}
+\end{center}
+\vspace{-0.5em}
 \begin{itemize}
-\item Existence result, not a practical recipe
-\item Says nothing about how many neurons you need
-\item In practice, deeper is much more efficient
+\item Each ReLU neuron contributes a ``hinge''; their weighted sum approximates $f$
+\item Existence result, not a recipe: says nothing about how many neurons you need
+\item In practice, deeper is much more efficient than wider
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Depth: Stacking Layers}
-We can more easily compute things if we compute them in multiple steps.
-\vspace{0.5em}
+\begin{center}
+\begin{tikzpicture}[
+  layer/.style={rectangle, draw, thick, minimum width=2.8cm, minimum height=0.5cm, font=\scriptsize},
+  arr/.style={->, thick, gray},
+]
+  \node[layer, fill=blue!10] (l1) at (0, 0) {Layer 1: edges};
+  \node[layer, fill=blue!15] (l2) at (0, 1) {Layer 2: textures};
+  \node[layer, fill=blue!20] (l3) at (0, 2) {Layer 3: parts};
+  \node[layer, fill=blue!25] (l4) at (0, 3) {Layer 4: objects};
+
+  \draw[arr] (l1) -- (l2);
+  \draw[arr] (l2) -- (l3);
+  \draw[arr] (l3) -- (l4);
+
+  \node[font=\scriptsize, left, gray] at (-1.8, 0) {pixels};
+  \node[font=\scriptsize, left, gray] at (-1.8, 3) {``dog''};
+
+  % Brace
+  \draw[decorate, decoration={brace, amplitude=4pt}, thick, gray]
+    (1.7, -0.25) -- (1.7, 3.25);
+  \node[font=\scriptsize, gray, right] at (2, 1.5) {same structure,};
+  \node[font=\scriptsize, gray, right] at (2, 1.05) {different features};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.3em}
 \begin{itemize}
-\item Example: classifying a dog is easier if early layers detect ears and snouts, later layers combine them into ``head''
-\item Models have layers that mostly look the same but learn different things
+\item Each layer builds on the previous one's representations
 \item The deep learning recipe: repeat a simple block many times
 \end{itemize}
-\vspace{0.5em}
+\vspace{0.3em}
 Over/underparameterization:
 \begin{itemize}
 \item Too few parameters $\Rightarrow$ cannot represent the function
@@ -402,51 +610,277 @@ Over/underparameterization:
 \end{frame}
 
 \begin{frame}{Residual Connections}
-Deep networks suffer from \textbf{vanishing gradients}: the chain rule often makes gradients go to zero through many layers.
-\vspace{0.5em}
+Deep networks suffer from \textbf{vanishing gradients}: gradients shrink to zero through many layers.
+\vspace{0.3em}
+\begin{center}
+\begin{tikzpicture}[
+  block/.style={rectangle, draw, thick, fill=orange!15, minimum width=1.8cm, minimum height=0.8cm, font=\small},
+  stream/.style={->, very thick, blue!60!black},
+  skip/.style={->, thick, blue!60!black},
+  plus/.style={circle, draw, thick, fill=blue!10, inner sep=1.5pt, font=\small\bfseries},
+]
+  % Residual stream (horizontal)
+  \node[font=\small] (x0) at (0, 0) {$x_l$};
+  \node[plus] (p1) at (3.5, 0) {$+$};
+  \node[plus] (p2) at (7, 0) {$+$};
+  \node[plus] (p3) at (10.5, 0) {$+$};
+  \node[font=\small] (xn) at (12.5, 0) {$x_{l+3}$};
 
-Fix: add a skip connection so every layer can start learning something.
+  % Stream arrows
+  \draw[stream] (x0) -- (p1);
+  \draw[stream] (p1) -- (p2);
+  \draw[stream] (p2) -- (p3);
+  \draw[stream] (p3) -- (xn);
+
+  % Blocks branching off
+  \node[block] (f1) at (1.75, -1.3) {$f_1$};
+  \node[block] (f2) at (5.25, -1.3) {$f_2$};
+  \node[block] (f3) at (8.75, -1.3) {$f_3$};
+
+  % Connections down and back up
+  \draw[thick, gray] (0.8, 0) |- (f1.west);
+  \draw[->, thick, gray] (f1.east) -| (p1);
+  \draw[thick, gray] (4.3, 0) |- (f2.west);
+  \draw[->, thick, gray] (f2.east) -| (p2);
+  \draw[thick, gray] (7.8, 0) |- (f3.west);
+  \draw[->, thick, gray] (f3.east) -| (p3);
+
+  % Label
+  \node[blue!60!black, font=\scriptsize, above] at (5.25, 0.25) {residual stream (gradient = 1)};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.3em}
 $$x_{l+1} = x_l + f(x_l)$$
 \begin{itemize}
-\item Gradient through the skip is exactly 1
-\item Network only needs to learn the \emph{residual} $f(x_l)$
-\item Enables training networks with hundreds of layers
+\item Gradient flows unimpeded through the skip path (identity)
+\item Each block only needs to learn the \emph{residual} correction $f(x_l)$
 \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Residual Connections in PyTorch}
+\begin{minted}{python}
+class ResidualBlock(nn.Module):
+    def __init__(self, d_model):
+        super().__init__()
+        self.layers = nn.Sequential(
+            nn.Linear(d_model, d_model),
+            nn.ReLU(),
+            nn.Linear(d_model, d_model),
+        )
+
+    def forward(self, x):
+        return x + self.layers(x)  # skip connection!
+\end{minted}
 \vspace{0.5em}
-% TODO: add diagram of residual stream with blocks feeding in/out
+\begin{itemize}
+\item The \texttt{x +} is the entire trick
+\item Stack many of these: \texttt{nn.Sequential(*[ResidualBlock(d) for \_ in range(n)])}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Architecture Encodes Symmetry}
 The right architecture exploits structure in the data.
-\vspace{0.5em}
+\begin{columns}[c]
+\begin{column}{0.35\textwidth}
+\begin{center}
+\begin{tikzpicture}
+  \node[inner sep=0pt] (img) at (0, 0) {\includegraphics[height=3.2cm]{figures/dog.jpg}};
+  % Ear circles
+  \draw[red!70!black, very thick] (-1.85, 0.95) ellipse (0.35 and 0.45);
+  \draw[red!70!black, very thick] (0.05, 1.1) ellipse (0.3 and 0.4);
+\end{tikzpicture}
+\end{center}
+\end{column}
+\begin{column}{0.65\textwidth}
+\begin{center}
+\begin{tikzpicture}[
+  det/.style={rectangle, draw, thick, rounded corners=2pt, minimum width=1.6cm, minimum height=0.7cm, font=\scriptsize},
+]
+  % Good: one shared detector
+  \node[font=\small\bfseries, green!50!black] at (0, 2) {CNN: one detector};
+  \node[det, fill=red!15] (d1) at (0, 1.2) {ear detector};
+  \draw[->, thick, gray] (-1.5, 0.5) -- (d1.south west);
+  \draw[->, thick, gray] (1.5, 0.5) -- (d1.south east);
+  \node[font=\scriptsize, gray] at (-1.5, 0.2) {pos.\ 1};
+  \node[font=\scriptsize, gray] at (1.5, 0.2) {pos.\ 2};
 
-Example: in an image, a dog ear looks the same regardless of position.
-We need a detector that is \textbf{translation invariant}, so we should not learn a separate detector for every location.
-\vspace{1em}
-An architecture that respects a symmetry needs fewer parameters and less data to learn the same function.
+  % Bad: separate detectors
+  \node[font=\small\bfseries, red!60!black] at (0, -0.5) {MLP: one detector per position};
+  \node[det, fill=gray!15] (d2) at (-1.2, -1.3) {ear @ pos.\ 1};
+  \node[det, fill=gray!15] (d3) at (1.2, -1.3) {ear @ pos.\ 2};
+  \node[font=\scriptsize, gray] at (0, -2) {$\ldots$ (one for every pixel)};
+\end{tikzpicture}
+\end{center}
+\end{column}
+\end{columns}
+\vspace{0.3em}
+An architecture that respects a symmetry needs \textbf{fewer parameters} and \textbf{less data}.
 \end{frame}
 
 \begin{frame}{Convolutional Neural Networks}
+\begin{center}
+\begin{tikzpicture}[scale=0.5]
+  % Input grid 5x5
+  \foreach \i in {0,...,4} {
+    \foreach \j in {0,...,4} {
+      \fill[blue!8] (\i, \j) rectangle ++(1, 1);
+      \draw[gray!50] (\i, \j) rectangle ++(1, 1);
+    }
+  }
+  % Some values in the input
+  \foreach \i/\j/\v in {0/4/1, 1/4/0, 2/4/1, 3/4/0, 4/4/2,
+                         0/3/0, 1/3/1, 2/3/2, 3/3/1, 4/3/0,
+                         0/2/1, 1/2/0, 2/2/1, 3/2/0, 4/2/1,
+                         0/1/2, 1/1/1, 2/1/0, 3/1/2, 4/1/1,
+                         0/0/0, 1/0/1, 2/0/1, 3/0/0, 4/0/2} {
+    \node[font=\tiny] at (\i+0.5, \j+0.5) {\v};
+  }
+  % Highlight the 3x3 kernel position
+  \fill[red!25, opacity=0.6] (1, 2) rectangle ++(3, 3);
+  \draw[red!70!black, very thick] (1, 2) rectangle ++(3, 3);
+  \node[font=\scriptsize, below] at (2.5, -0.3) {Input};
+
+  % Kernel 3x3
+  \begin{scope}[shift={(7, 1.5)}]
+    \foreach \i in {0,...,2} {
+      \foreach \j in {0,...,2} {
+        \fill[red!15] (\i, \j) rectangle ++(1, 1);
+        \draw[red!40] (\i, \j) rectangle ++(1, 1);
+      }
+    }
+    \foreach \i/\j/\v in {0/2/1, 1/2/0, 2/2/-1,
+                           0/1/1, 1/1/0, 2/1/-1,
+                           0/0/1, 1/0/0, 2/0/-1} {
+      \node[font=\tiny] at (\i+0.5, \j+0.5) {\v};
+    }
+    \node[font=\scriptsize, below] at (1.5, -0.3) {Kernel};
+  \end{scope}
+
+  % Multiply symbol
+  \node[font=\Large] at (6.2, 2.5) {$*$};
+
+  % Equals
+  \node[font=\Large] at (11.2, 2.5) {$=$};
+
+  % Output grid 3x3
+  \begin{scope}[shift={(12.5, 1)}]
+    \foreach \i in {0,...,2} {
+      \foreach \j in {0,...,2} {
+        \fill[green!10] (\i, \j) rectangle ++(1, 1);
+        \draw[gray!50] (\i, \j) rectangle ++(1, 1);
+      }
+    }
+    % Highlight the corresponding output cell
+    \fill[green!30] (1, 1) rectangle ++(1, 1);
+    \draw[green!60!black, very thick] (1, 1) rectangle ++(1, 1);
+    \node[font=\tiny\bfseries] at (1.5, 1.5) {$\Sigma$};
+    \node[font=\scriptsize, below] at (1.5, -0.3) {Output};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+\vspace{-0.3em}
 \begin{itemize}
-\item A small kernel slides across the input (weight sharing)
-\item Same features detected regardless of position
+\item \textbf{Same kernel} slides across every position (weight sharing)
+\item Same features detected regardless of location $\Rightarrow$ translation invariance
 \item Hierarchy: edges $\rightarrow$ textures $\rightarrow$ parts $\rightarrow$ objects
 \end{itemize}
-\vspace{1em}
-% TODO: add gif/animation of convolution sliding over an image
+\end{frame}
+
+\begin{frame}[fragile]{CNNs in PyTorch}
+\begin{minted}{python}
+cnn = nn.Sequential(
+    nn.Conv2d(1, 16, kernel_size=3, padding=1),  # 1 channel -> 16
+    nn.ReLU(),
+    nn.MaxPool2d(2),                    # downsample 2x
+    nn.Conv2d(16, 32, kernel_size=3, padding=1),
+    nn.ReLU(),
+    nn.MaxPool2d(2),
+    nn.Flatten(),                       # spatial -> vector
+    nn.Linear(32 * 7 * 7, 10),         # classify into 10 classes
+)
+\end{minted}
+\vspace{0.5em}
+\begin{itemize}
+\item \texttt{Conv2d}: the sliding kernel (learnable weights)
+\item \texttt{MaxPool2d}: downsample by taking the max in each region
+\item Parameters: only the kernel values, shared across all positions
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Transformers (Preview)}
-Text has a similar symmetry: each word is similar, but understanding requires long-range connections, not just neighbors.
-\vspace{0.5em}
+\begin{center}
+\begin{tikzpicture}[
+  tok/.style={rectangle, draw, thick, fill=blue!10, minimum width=0.9cm, minimum height=0.55cm, font=\scriptsize},
+  ffn/.style={rectangle, draw, thick, fill=orange!15, minimum width=0.9cm, minimum height=0.45cm, font=\scriptsize},
+  attn/.style={rectangle, draw, thick, fill=red!12, rounded corners=2pt, minimum height=0.45cm, font=\scriptsize},
+  arr/.style={->, thick, gray!60},
+]
+  % Token positions (using integer names)
+  \node[tok] (tA) at (0, 0) {The};
+  \node[tok] (tB) at (1.8, 0) {cat};
+  \node[tok] (tC) at (3.6, 0) {sat};
+  \node[tok] (tD) at (5.4, 0) {on};
+  \node[tok] (tE) at (7.2, 0) {the};
+  \node[tok] (tF) at (9, 0) {mat};
+
+  % === Layer 1 ===
+  \node[attn, minimum width=10.2cm] (a1) at (4.5, 1.2) {Attention: each token reads from all others};
+
+  \foreach \x in {0, 1.8, 3.6, 5.4, 7.2, 9}
+    \draw[arr] (\x, 0.28) -- (\x, 0.95);
+
+  % FFN blocks (per token, independent)
+  \node[ffn] (fA1) at (0, 2.2) {MLP};
+  \node[ffn] (fB1) at (1.8, 2.2) {MLP};
+  \node[ffn] (fC1) at (3.6, 2.2) {MLP};
+  \node[ffn] (fD1) at (5.4, 2.2) {MLP};
+  \node[ffn] (fE1) at (7.2, 2.2) {MLP};
+  \node[ffn] (fF1) at (9, 2.2) {MLP};
+
+  \foreach \x in {0, 1.8, 3.6, 5.4, 7.2, 9}
+    \draw[arr] (\x, 1.45) -- (\x, 1.97);
+
+  % === Layer 2 ===
+  \node[attn, minimum width=10.2cm] (a2) at (4.5, 3.2) {Attention: each token reads from all others};
+
+  \draw[arr] (fA1.north) -- (0, 2.95);
+  \draw[arr] (fB1.north) -- (1.8, 2.95);
+  \draw[arr] (fC1.north) -- (3.6, 2.95);
+  \draw[arr] (fD1.north) -- (5.4, 2.95);
+  \draw[arr] (fE1.north) -- (7.2, 2.95);
+  \draw[arr] (fF1.north) -- (9, 2.95);
+
+  \node[ffn] (fA2) at (0, 4.2) {MLP};
+  \node[ffn] (fB2) at (1.8, 4.2) {MLP};
+  \node[ffn] (fC2) at (3.6, 4.2) {MLP};
+  \node[ffn] (fD2) at (5.4, 4.2) {MLP};
+  \node[ffn] (fE2) at (7.2, 4.2) {MLP};
+  \node[ffn] (fF2) at (9, 4.2) {MLP};
+
+  \foreach \x in {0, 1.8, 3.6, 5.4, 7.2, 9}
+    \draw[arr] (\x, 3.45) -- (\x, 3.97);
+
+  % Dots and output
+  \foreach \x in {0, 1.8, 3.6, 5.4, 7.2, 9} {
+    \node[gray, font=\small] at (\x, 4.9) {$\vdots$};
+  }
+
+  % Annotations
+  \draw[decorate, decoration={brace, amplitude=4pt}, thick, gray]
+    (-0.8, 1.9) -- (-0.8, 1.0);
+  \node[font=\tiny, gray, left, align=right] at (-1, 1.45) {tokens\\talk};
+
+  \draw[decorate, decoration={brace, amplitude=4pt}, thick, gray]
+    (-0.8, 2.55) -- (-0.8, 1.95);
+  \node[font=\tiny, gray, left, align=right] at (-1, 2.25) {tokens\\independent};
+\end{tikzpicture}
+\end{center}
+\vspace{-0.5em}
 \begin{itemize}
-\item \textbf{Self-attention}: each token attends to all other tokens
-\item Repeated blocks of: attention $\rightarrow$ feedforward $\rightarrow$ residual connection
-\item Dominant architecture for language (and increasingly vision, audio, \ldots)
+\item \textbf{Attention}: tokens mix information (the only place they interact)
+\item \textbf{MLP}: each token processed independently (same weights, different data)
 \item We will go much deeper in the afternoon session
 \end{itemize}
-\vspace{0.5em}
-% TODO: add gif/animation of transformer attention
 \end{frame}
 
 \begin{frame}{}
