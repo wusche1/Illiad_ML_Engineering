@@ -1,10 +1,11 @@
 % Beamer theme
-\usetheme{Madrid}
-\usecolortheme{default}
+\usetheme{moloch}
 
-% Clean navigation: no symbols, just frame numbers
+% Clean navigation: just frame numbers
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+
+% Numbered sections in table of contents
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
 
 % Bibliography customizations
 \AtEveryBibitem{%
