@@ -140,32 +140,41 @@
 
     <!-- Q6: Experience -->
     <div class="question" data-q="q6">
-      <p class="q-title">6. Have you written a training loop in PyTorch yourself (not just run existing code)?</p>
+      <p class="q-title">6. Have you rented and worked on a remote GPU (RunPod, Lambda, AWS, HPC cluster, etc.)?</p>
       <div class="options">
-        <label><input type="radio" name="q6" value="2"> Yes, multiple times for different tasks</label>
-        <label><input type="radio" name="q6" value="1"> Once or twice, or I've substantially modified existing ones</label>
-        <label><input type="radio" name="q6" value="0"> No, but I've run other people's training scripts</label>
-        <label><input type="radio" name="q6" value="0b"> No experience with PyTorch training</label>
+        <label><input type="radio" name="q6" value="2"> Yes, I'm comfortable with SSH, environment setup, and remote development</label>
+        <label><input type="radio" name="q6" value="1"> I've done it but it was painful / I followed a tutorial</label>
+        <label><input type="radio" name="q6" value="0"> No, only local / Colab</label>
       </div>
     </div>
 
     <!-- Q7: Experience -->
     <div class="question" data-q="q7">
-      <p class="q-title">7. Have you used experiment tracking tools (WandB, TensorBoard, MLflow, etc.)?</p>
+      <p class="q-title">7. Have you used experiment tracking (WandB, TensorBoard, MLflow) or Python packaging tools (pip, uv, pyproject.toml)?</p>
       <div class="options">
-        <label><input type="radio" name="q7" value="2"> Yes, I regularly log metrics, hyperparameters, and artifacts</label>
-        <label><input type="radio" name="q7" value="1"> I've used them but not extensively</label>
-        <label><input type="radio" name="q7" value="0"> No</label>
+        <label><input type="radio" name="q7" value="2"> Yes, I regularly use experiment tracking and manage project dependencies</label>
+        <label><input type="radio" name="q7" value="1"> I've used one or both but not extensively</label>
+        <label><input type="radio" name="q7" value="0"> No experience with either</label>
       </div>
     </div>
 
     <!-- Q8: Experience -->
     <div class="question" data-q="q8">
-      <p class="q-title">8. Have you trained a model on a remote GPU (cloud provider, HPC cluster, etc.)?</p>
+      <p class="q-title">8. Have you dealt with multi-GPU training, distributed computing, or concurrent/multithreaded Python code?</p>
       <div class="options">
-        <label><input type="radio" name="q8" value="2"> Yes, I'm comfortable with SSH, environment setup, and job scheduling</label>
-        <label><input type="radio" name="q8" value="1"> I've done it but it was painful / I followed a tutorial</label>
-        <label><input type="radio" name="q8" value="0"> No, only local / Colab</label>
+        <label><input type="radio" name="q8" value="2"> Yes, I've used torch.distributed, multiprocessing, or similar tools</label>
+        <label><input type="radio" name="q8" value="1"> I've encountered these topics but haven't used them hands-on</label>
+        <label><input type="radio" name="q8" value="0"> No experience</label>
+      </div>
+    </div>
+
+    <!-- Q9: Experience -->
+    <div class="question" data-q="q9">
+      <p class="q-title">9. Have you published a dataset or model weights (e.g. on HuggingFace, GitHub, or a similar platform)?</p>
+      <div class="options">
+        <label><input type="radio" name="q9" value="2"> Yes, I've published artifacts with documentation for others to use</label>
+        <label><input type="radio" name="q9" value="1"> I've shared code/weights informally but not as a proper release</label>
+        <label><input type="radio" name="q9" value="0"> No</label>
       </div>
     </div>
 
@@ -417,7 +426,7 @@ initMatching();
 // ── Scoring ──
 
 const MC_QS = ['q1', 'q3', 'q4'];
-const EXP_QS = ['q6', 'q7', 'q8'];
+const EXP_QS = ['q6', 'q7', 'q8', 'q9'];
 
 document.getElementById('quiz').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -456,17 +465,17 @@ document.getElementById('quiz').addEventListener('submit', function(e) {
   const total = knowledgeScore * 1.2 + expScore;
 
   const knowledgePct = Math.round((knowledgeScore / 5) * 100);
-  const expPct = Math.round((expScore / 6) * 100);
+  const expPct = Math.round((expScore / 8) * 100);
 
   document.getElementById('result-score').textContent = 'Knowledge: ' + knowledgePct + '% \u00b7 Practical experience: ' + expPct + '%';
 
   const titleEl = document.getElementById('result-title');
   const trackEl = document.getElementById('result-track');
 
-  if (total >= 7) {
+  if (total >= 8) {
     titleEl.textContent = 'Track B: Practical ML Engineering';
     trackEl.className = 'track track-b';
-    trackEl.innerHTML = '<h3>What you\'ll cover:</h3><ul><li>Experiment tracking with Weights &amp; Biases</li><li>Renting and managing cloud GPUs (RunPod)</li><li>Hyperparameter sweeps at scale</li><li>End-to-end experiment workflow</li></ul>';
+    trackEl.innerHTML = '<h3>What you\'ll cover:</h3><ul><li>Cloud GPUs with RunPod + VSCode Remote</li><li>Experiment tracking with Weights &amp; Biases</li><li>Distributed and concurrent computing</li><li>The Python and ML ecosystem</li><li>Publishing your project</li></ul>';
   } else {
     titleEl.textContent = 'Track A: ML Foundations';
     trackEl.className = 'track track-a';
