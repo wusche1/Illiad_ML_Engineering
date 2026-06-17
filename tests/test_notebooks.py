@@ -45,6 +45,8 @@ def extract_solutions(nb):
 )
 def test_notebook(exercise_dir):
     nb = nbformat.read(exercise_dir / "notebook.ipynb", as_version=4)
+    if nb.metadata.get("requires_gpu"):
+        pytest.skip("notebook requires a GPU / model downloads; not run in CI")
     solutions = extract_solutions(nb)
 
     exercise_ids = [

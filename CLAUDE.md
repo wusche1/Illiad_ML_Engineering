@@ -22,8 +22,8 @@ For participants who need PyTorch basics. Notes written, exercises marked with `
 ### Morning Track B: `01_b_practical_ml` (~4h)
 For participants who already know PyTorch. Notes NOT yet written.
 
-### Afternoon: `02_llm_architecture` (combined, ~4h)
-Both tracks merge. Notes NOT yet written.
+### Afternoon: `02_using_coding_agents` (combined, ~4h)
+Both tracks merge. Vibe-coding session: present coding-agent tools, let participants play with them, then build a research project within an hour. Notes NOT yet written.
 
 ## Track Selection Quiz
 

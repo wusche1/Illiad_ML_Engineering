@@ -1,0 +1,23 @@
+form_id: 1CvgWSIoz2WBtyMsEMVShmmad2UhIhmY_RV_j1N0V6yo
+title: "ML Foundations: Familiarity Check"
+description: >-
+  For each topic, rate how familiar you are right now. Be honest, this is not
+  graded, it only helps us calibrate the course. Takes ~1 minute.
+name_field: true
+
+questions:
+  - title: "Conceptual ML: the training loop, loss functions, overfitting and underfitting"
+    scale: &scale
+      low: 1
+      high: 7
+      low_label: "Never heard of it"
+      high_label: "Intimately familiar"
+
+  - title: "Optimizers: gradient descent, momentum, Adam, hyperparameter optimization"
+    scale: *scale
+
+  - title: "Architectures: MLPs, CNNs, residual connections, normalization"
+    scale: *scale
+
+  - title: "Transformers and LLMs: attention, tokenization, sampling"
+    scale: *scale

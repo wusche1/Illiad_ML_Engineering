@@ -1,0 +1,142 @@
+form_id: 1eg7rpI1ibrf2FYQh3D7pAFhCiwQkb4drLrRJQF4Azxo
+title: "ML Foundations: Knowledge Check"
+description: >-
+  Checks how familiar you are with the material of the ML foundations lecture.
+  Answer from memory, no looking things up. Takes ~8 minutes.
+name_field: true
+
+questions:
+  - title: "1. You forget to call optimizer.zero_grad() in your training loop. What actually happens?"
+    choices:
+      - "PyTorch raises an error on the second backward() call"
+      - "Gradients from successive batches add up, so each step uses the running sum of all past gradients"
+      - "Nothing: optimizer.step() clears the gradients after applying them"
+      - "The model trains identically but uses more memory"
+      - "I don't know"
+    correct: 1
+
+  - title: "2. x = torch.tensor(2.0, requires_grad=True); y = x**2; z = y + x; z.backward(). What is x.grad?"
+    choices:
+      - "4.0"
+      - "5.0"
+      - "1.0"
+      - "Error: backward() can only be called on a loss produced by a loss function"
+      - "I don't know"
+    correct: 1
+
+  - title: "3. How does the mini-batch gradient relate to the gradient of the loss over the full dataset?"
+    choices:
+      - "It is an unbiased estimate of it, with variance that shrinks as the batch size grows"
+      - "It is biased toward the easy examples, but the bias averages out over an epoch"
+      - "It equals the full gradient as long as the data is properly shuffled"
+      - "It systematically underestimates the gradient norm, which is why momentum is needed"
+      - "I don't know"
+    correct: 0
+
+  - title: "4. A has shape (32, 10, 64) and B has shape (64, 128). What is the shape of A @ B?"
+    choices:
+      - "(32, 10, 128)"
+      - "(32, 128)"
+      - "(10, 128)"
+      - "Error: matmul requires 2-D tensors"
+      - "I don't know"
+    correct: 0
+
+  - title: "5. Training crashes with CUDA out-of-memory. You halve the batch size and it fits. Which memory did you (roughly) halve?"
+    choices:
+      - "The model parameters"
+      - "The optimizer state (e.g. Adam's moment estimates)"
+      - "The activations from the forward pass, stored for the backward pass"
+      - "The gradients of the parameters"
+      - "I don't know"
+    correct: 2
+
+  - title: "6. Why do we train classifiers by minimizing cross-entropy instead of directly maximizing accuracy?"
+    choices:
+      - "Accuracy is piecewise constant in the weights: its gradient is zero almost everywhere, so it gives gradient descent no signal"
+      - "Accuracy cannot be computed on mini-batches, only on the full dataset"
+      - "Cross-entropy is much cheaper to compute than accuracy"
+      - "Directly maximizing accuracy leads to overfitting"
+      - "I don't know"
+    correct: 0
+
+  - title: "7. A reward model assigns text t a score s(t), trained on human preferences \"A is better than B\" with loss -log sigmoid(s_A - s_B). Which property follows?"
+    choices:
+      - "The minimum of the loss is reached when all texts get the same score"
+      - "The scores are calibrated probabilities that a human likes the text"
+      - "The loss pushes all scores into the interval [0, 1]"
+      - "Adding the same constant to every score leaves the loss unchanged: only score differences are meaningful"
+      - "I don't know"
+    correct: 3
+
+  - title: "8. SGD with momentum beta = 0.9, and suppose the gradient g is identical at every step. After many steps, the per-step parameter update approaches:"
+    choices:
+      - "lr * g, same as without momentum"
+      - "10 * lr * g"
+      - "0.9 * lr * g"
+      - "It grows without bound"
+      - "I don't know"
+    correct: 1
+
+  - title: "9. Two parameters consistently receive gradients of magnitude ~0.001 and ~1.0. After warm-up, how do Adam's update steps for them compare?"
+    choices:
+      - "The second parameter's steps are ~1000x larger, proportional to its gradient (like SGD)"
+      - "Roughly the same size: Adam divides by a running RMS of each parameter's gradient, normalizing the scale away"
+      - "The first parameter's steps are larger, to compensate for its small gradient"
+      - "Adam stops updating parameters whose gradients are consistently small"
+      - "I don't know"
+    correct: 1
+
+  - title: "10. An MLP with 10 stacked linear layers and no nonlinearities is exactly as expressive as:"
+    choices:
+      - "A single linear layer"
+      - "A 2-layer MLP with ReLU, if the hidden layers are wide enough"
+      - "Any continuous function: depth alone makes it a universal approximator"
+      - "It depends on the widths of the hidden layers"
+      - "I don't know"
+    correct: 0
+
+  - title: "11. A single-hidden-layer network can already approximate any continuous function arbitrarily well. Why use deep networks at all?"
+    choices:
+      - "The universality theorem only holds for sigmoid activations, which are obsolete"
+      - "The required width can blow up exponentially; depth lets the network build features that compose and get reused (edges -> ears -> dog)"
+      - "Deep networks generalize better because they always have fewer parameters"
+      - "Backpropagation is numerically unstable for single-hidden-layer networks"
+      - "I don't know"
+    correct: 1
+
+  - title: "12. A residual block computes y = x + f(x). Why does this combat vanishing gradients?"
+    choices:
+      - "dy/dx = I + df/dx: the identity term gives gradients a direct path back, so the product over many layers cannot shrink to zero"
+      - "It constrains f(x) to stay small, which keeps all gradients bounded"
+      - "It halves the effective depth of the network"
+      - "The addition renormalizes the activations to unit variance at every layer"
+      - "I don't know"
+    correct: 0
+
+  - title: "13. You translate an input image two pixels to the right. What happens to the output of a convolution layer, and why does this make convolutions suit images?"
+    choices:
+      - "The output is completely unchanged (invariance), so position information is discarded early"
+      - "The output translates by the same amount (equivariance): one learned detector is reused at every position"
+      - "The output changes arbitrarily; it is the pooling layers that handle translation"
+      - "Convolutions are about rotation invariance, not translation"
+      - "I don't know"
+    correct: 1
+
+  - title: "14. Training loss falls steadily while validation loss falls, then starts rising. Which change would NOT help?"
+    choices:
+      - "Getting more training data"
+      - "Adding regularization (weight decay, dropout)"
+      - "Stopping training earlier"
+      - "Training for more epochs"
+      - "I don't know"
+    correct: 3
+
+  - title: "15. What are empirical scaling laws (e.g. Chinchilla) used for in practice?"
+    choices:
+      - "Fitting trends across many cheap small runs, then extrapolating to choose settings (e.g. model size vs. data size) for one expensive large run"
+      - "Proving that training converges for large enough models"
+      - "Computing the exact optimal learning rate for a given architecture"
+      - "Showing that more parameters always help, so one should maximize model size"
+      - "I don't know"
+    correct: 0
