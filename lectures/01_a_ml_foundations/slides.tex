@@ -267,7 +267,7 @@ Sometimes we cannot say what the correct output looks like, but we can identify 
 \begin{itemize}
 \item \textbf{Underfitting}: both losses high (model too simple or undertrained)
 \item \textbf{Overfitting}: train loss low, test loss rises (model memorizes)
-\item Regularization (L2, dropout) constrains the model to delay overfitting
+\item Regularization (L2, dropout \cite{srivastava2014}) constrains the model to delay overfitting
 \end{itemize}
 \end{frame}
 
@@ -534,13 +534,13 @@ Without nonlinearities, stacking linear layers just gives another linear layer.
 \vspace{-0.3em}
 \begin{itemize}
 \item \textbf{ReLU}: simple, effective, standard for MLPs
-\item \textbf{GELU}: smooth, used in transformers
+\item \textbf{GELU} \cite{hendrycks2016}: smooth, used in transformers
 \item \textbf{Sigmoid}: saturates at extremes, mostly historical
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Universal Approximation}
-\textbf{Theorem} (Cybenko, Hornik et al.):
+\textbf{Theorem} (Cybenko \cite{cybenko1989}, Hornik et al.\ \cite{hornik1989}):
 A single hidden layer can approximate any continuous function on a compact set.
 \begin{center}
 \begin{tikzpicture}[xscale=1.0, yscale=0.8]
@@ -609,7 +609,7 @@ Over/underparameterization:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Residual Connections}
+\begin{frame}{Residual Connections \cite{he2015}}
 Deep networks suffer from \textbf{vanishing gradients}: gradients shrink to zero through many layers.
 \vspace{0.3em}
 \begin{center}
@@ -714,7 +714,7 @@ The right architecture exploits structure in the data.
 An architecture that respects a symmetry needs \textbf{fewer parameters} and \textbf{less data}.
 \end{frame}
 
-\begin{frame}{Convolutional Neural Networks}
+\begin{frame}{Convolutional Neural Networks \cite{lecun1998}}
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
   % Input grid 5x5
@@ -804,7 +804,7 @@ cnn = nn.Sequential(
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Transformers (Preview)}
+\begin{frame}{Transformers (Preview) \cite{vaswani2017}}
 \begin{center}
 \begin{tikzpicture}[
   tok/.style={rectangle, draw, thick, fill=blue!10, minimum width=0.9cm, minimum height=0.55cm, font=\scriptsize},
@@ -908,7 +908,7 @@ Any property not set by gradient descent is set by the experimenter:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Scaling Laws \cite{kaplan2020}}
+\begin{frame}{Scaling Laws \cite{kaplan2020, hoffmann2022}}
 \begin{center}
 \includegraphics[width=\textwidth]{figures/scaling_laws.png}
 \end{center}
@@ -922,6 +922,491 @@ Cheap small experiments predict large-scale performance.
 \Large \textbf{Exercise 4: Hyperparameter Tuning} \\[1em]
 \normalsize Until lunch \\[1em]
 \url{https://playground.tensorflow.org/}
+\end{frame}
+
+% ============================================================
+\section{Transformer Architecture}
+% ============================================================
+
+\begin{frame}{A Top-Down View}
+\begin{center}
+\begin{tikzpicture}[
+  box/.style={rectangle, draw, thick, rounded corners=3pt, minimum width=2.2cm, minimum height=0.9cm, font=\small},
+  io/.style={font=\small\ttfamily},
+  arr/.style={->, very thick, gray!70},
+]
+  \node[io] (in) {"The cat sat on the"};
+  \node[box, fill=blue!15, below=0.85cm of in] (tok) {Tokenizer};
+  \node[box, fill=green!15, below=0.85cm of tok] (tf) {Transformer};
+  \node[box, fill=orange!15, below=0.85cm of tf] (samp) {Sampler};
+  \node[io, below=0.85cm of samp] (out) {" mat"};
+  \draw[arr] (in) -- (tok);
+  \draw[arr] (tok) -- (tf) node[midway, right, font=\scriptsize] {token ids};
+  \draw[arr] (tf) -- (samp) node[midway, right, font=\scriptsize] {logits};
+  \draw[arr] (samp) -- (out);
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Tokenizer}
+\begin{center}
+\begin{tikzpicture}[font=\small\ttfamily, node distance=0.15cm]
+  \node (s) {"The cat sat on the"};
+  \node[below=1.0cm of s] (a) {[\,"The", " cat", " sat", " on", " the"\,]};
+  \node[below=0.8cm of a] (b) {[\,976,\ \ 9059,\ \ 10139,\ \ 402,\ \ 290\,]};
+  \draw[->, thick, gray!70] (s) -- (a) node[midway, right, font=\scriptsize\rmfamily] {split into subwords};
+  \draw[->, thick, gray!70] (a) -- (b) node[midway, right, font=\scriptsize\rmfamily] {look up in vocabulary};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Building the Tokenizer: Byte Pair Encoding}
+Start with the vocabulary as all single characters, then \textbf{repeat}:
+\begin{enumerate}
+\item Find the most frequent adjacent pair.
+\item Merge it into a new symbol; add it to the vocabulary.
+\end{enumerate}
+\medskip
+Stop at the target vocabulary size.
+\end{frame}
+
+\begin{frame}{Sampler}
+The transformer outputs one \textbf{logit} per vocabulary token: $z \in \mathbb{R}^{|V|}$.
+\[
+p_i = \frac{e^{z_i / T}}{\sum_j e^{z_j / T}}
+\]
+\textbf{Temperature} $T$: as $T \to 0$ this recovers greedy ($\arg\max$); $T < 1$ sharpens the distribution, $T > 1$ flattens it.
+\begin{itemize}
+\item \textbf{Top-$k$}: keep the $k$ highest-probability tokens, renormalize, then sample.
+\item \textbf{Top-$p$} (nucleus): keep the smallest set of tokens whose probabilities sum to at least $p$, renormalize, then sample.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Inside the Transformer}
+\begin{center}
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  blk/.style={rectangle, draw, thick, rounded corners=2pt, minimum width=1.9cm, minimum height=0.75cm, font=\small},
+  add/.style={circle, draw, thick, inner sep=1.6pt, font=\small},
+  dot/.style={circle, fill=gray!75, inner sep=1.3pt},
+  arr/.style={->, thick, gray!75},
+]
+  % the residual stream: one line straight through
+  \node[blk, fill=blue!15] (emb) at (0,0) {Embed};
+  \node[add] (a1) at (2.9,0) {$+$};
+  \node[add] (a2) at (5.8,0) {$+$};
+  \node[blk, fill=green!15] (un) at (8.7,0) {Unembed};
+  \node[font=\small] (lg) at (10.8,0) {logits};
+  \draw[arr] (emb) -- (a1);
+  \draw[arr] (a1) -- (a2);
+  \draw[arr] (a2) -- (un);
+  \draw[arr] (un) -- (lg);
+  % branch points
+  \node[dot] at (1.45,0) {};
+  \node[dot] at (4.35,0) {};
+  % attention and MLP branch off and write back
+  \node[blk, fill=red!15] (attn) at (1.45,-2.0) {Attention};
+  \node[blk, fill=orange!15] (mlp) at (4.35,-2.0) {MLP};
+  \draw[arr] (1.45,0) -- (attn);
+  \draw[arr] (attn) -| (a1);
+  \draw[arr] (4.35,0) -- (mlp);
+  \draw[arr] (mlp) -| (a2);
+  % brace: this block repeats
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, thick, gray]
+    (0.3,-2.95) -- (5.5,-2.95);
+  \node[gray, font=\scriptsize, below] at (2.9,-3.15) {one transformer block, repeated $\times N$};
+\end{tikzpicture}}
+\end{center}
+\vspace{0.6em}
+\begin{itemize}
+\item \textbf{Attention head}: moves information between token positions.
+\item \textbf{MLP}: stores / computes information.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Embedding}
+A lookup table $W_E \in \mathbb{R}^{|V| \times d}$: each token id selects one row, a learned vector carrying its meaning.
+\[
+\text{token id } t \;\longmapsto\; x_t = (W_E)_t \in \mathbb{R}^{d}
+\]
+The vectors are \textbf{learned}, so directions in this space come to encode semantic relationships.
+\end{frame}
+
+\begin{frame}{Positional Encoding}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\centering\textbf{Learned (absolute)}
+\smallskip
+
+A second lookup table, one learned vector per position:
+\[
+P \in \mathbb{R}^{L \times d}, \qquad \text{pos} \mapsto P_{\text{pos}}
+\]
+\[
+x_{\text{pos}} = \text{embed}(\text{token}) + P_{\text{pos}}
+\]
+The obvious default; capped at a maximum length $L$, and position is \textbf{absolute}.
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering\textbf{Rotary (RoPE)}
+\smallskip
+
+Rotate each 2D pair of query/key dims by an angle $\propto$ position:
+\[
+\tilde{q}_m = R(m\theta)\, q, \qquad \tilde{k}_n = R(n\theta)\, k
+\]
+\[
+R(\alpha) = \begin{pmatrix} \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end{pmatrix}
+\]
+\[
+\langle \tilde{q}_m, \tilde{k}_n \rangle = g(q, k,\, m - n)
+\]
+Score depends only on the \textbf{relative} offset $m-n$; applied every layer.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Unembedding}
+\textbf{Not} the inverse of embedding.
+\[
+z = W_U\, x, \qquad W_U \in \mathbb{R}^{|V| \times d}
+\]
+\begin{itemize}
+\item Reads the final residual stream and projects it back to vocabulary size.
+\item Produces one logit per token, ready for the sampler.
+\item Uses its own learned weights $W_U$, separate from $W_E$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Anatomy of an Attention Head}
+\centering
+\resizebox{!}{0.80\textheight}{%
+\begin{tikzpicture}[
+  d/.style={rectangle, draw, thick, rounded corners=2pt, minimum width=1.4cm, minimum height=0.75cm, font=\small},
+  op/.style={font=\scriptsize, gray!75, align=center},
+  w/.style={font=\normalsize, black},
+  dim/.style={font=\small, black!85},
+  a/.style={->, thick, gray!75},
+]
+  % residual stream
+  \node[d, fill=black!8] (x) at (4, 0) {$x$};
+  \node[dim, right=2pt of x] {$(s,d)$};
+
+  % Q, K, V projections
+  \node[d, fill=red!20]   (k) at (1.2, 2.2) {$K$};
+  \node[d, fill=cyan!25]  (q) at (4, 2.2)   {$Q$};
+  \node[d, fill=green!22] (v) at (7.4, 2.2) {$V$};
+  \node[dim, below=1pt of k] {$(s,a)$};
+  \node[dim, below=1pt of q] {$(s,a)$};
+  \node[dim, below=1pt of v] {$(s,a)$};
+
+  % scores and probabilities
+  \node[d, fill=orange!25] (sc) at (2.6, 4.4) {$QK^\top$};
+  \node[dim, right=2pt of sc] {$(s,s)$};
+  \node[d, fill=orange!40] (pr) at (2.6, 6.2) {$A$};
+  \node[dim, right=2pt of pr] {$(s,s)$};
+
+  % weighted values and output
+  \node[d, fill=green!30] (z) at (5.6, 7.2) {$z$};
+  \node[dim, right=2pt of z] {$(s,a)$};
+  \node[d, fill=black!8] (xo) at (5.6, 9.0) {$x'$};
+  \node[dim, right=2pt of xo] {$(s,d)$};
+
+  % projection arrows
+  \draw[a] (x) -- (k) node[w, midway, above left=-1pt] {$W_K$};
+  \draw[a] (x) -- (q) node[w, midway, right] {$W_Q$};
+  \draw[a] (x) -- (v) node[w, midway, above right=-1pt] {$W_V$};
+
+  % attention computation
+  \draw[a] (k) -- (sc);
+  \draw[a] (q) -- (sc);
+  \node[op] at (0.3, 3.5) {query--key\\dot products};
+  \draw[a] (sc) -- (pr) node[op, midway, right] {scale, mask,\\softmax};
+  \draw[a] (pr) -- (z) node[op, midway, above left=-1pt] {weighted avg\\of values};
+  \draw[a] (v) to[out=90, in=-15] (z);
+  \draw[a] (z) -- (xo) node[w, midway, right] {$W_O$};
+  % causal mask applied at the A (probabilities) step
+  \begin{scope}[shift={(-2.0,6.9)}]
+    \foreach \r in {0,1,2,3}
+      \foreach \c in {0,1,2,3} {
+        \ifnum\c>\r
+          \fill[gray!15] (\c*0.26,-\r*0.26) rectangle ++(0.26,0.26);
+        \else
+          \fill[orange!45] (\c*0.26,-\r*0.26) rectangle ++(0.26,0.26);
+        \fi
+        \draw[gray!55, very thin] (\c*0.26,-\r*0.26) rectangle ++(0.26,0.26);
+      }
+    \node[op, below, align=center] at (0.52,-1.15) {causal mask:\\query sees only\\earlier keys};
+  \end{scope}
+  \draw[a, dashed, gray!55] (-0.85,6.38) -- (pr.west);
+\end{tikzpicture}}
+
+\smallskip
+{\scriptsize $\mathrm{Attention}(Q,K,V)=\mathrm{softmax}\!\big(\tfrac{QK^\top}{\sqrt{d_k}}\big)V$ \quad\textbar\quad $s$: seq length, \ $d$: model dim, \ $a$: head dim}
+\end{frame}
+
+\begin{frame}{Exercises}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\centering
+\Large \href{https://colab.research.google.com/github/wusche1/Illiad_ML_Engineering/blob/main/lectures/01_a_ml_foundations/exercises/04_mlp/notebook.ipynb}{\textbf{MLP}} \\[1em]
+\qrcode[height=2.7cm]{https://colab.research.google.com/github/wusche1/Illiad_ML_Engineering/blob/main/lectures/01_a_ml_foundations/exercises/04_mlp/notebook.ipynb}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering
+\Large \href{https://colab.research.google.com/github/wusche1/Illiad_ML_Engineering/blob/main/lectures/01_a_ml_foundations/exercises/05_attention/notebook.ipynb}{\textbf{Attention}} \\[1em]
+\qrcode[height=2.7cm]{https://colab.research.google.com/github/wusche1/Illiad_ML_Engineering/blob/main/lectures/01_a_ml_foundations/exercises/05_attention/notebook.ipynb}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ============================================================
+\section{Reinforcement Learning and RLHF}
+% ============================================================
+
+\begin{frame}{The Model Lifecycle}
+\begin{center}
+\begin{tikzpicture}[
+  box/.style={rectangle, draw, thick, rounded corners=3pt, minimum width=2.4cm, minimum height=1.0cm, font=\small, align=center},
+  arr/.style={->, very thick, gray!70},
+]
+  \node[box, fill=blue!15] (pt) {Pretraining};
+  \node[box, fill=green!15, right=1.2cm of pt] (sft) {Supervised\\Fine-Tuning};
+  \node[box, fill=orange!18, above right=0.25cm and 1.4cm of sft] (rlhf) {RLHF};
+  \node[box, fill=red!15, below right=0.25cm and 1.4cm of sft] (rlvr) {RLVR};
+  \draw[arr] (pt) -- (sft);
+  \draw[arr] (sft.east) -- (rlhf.west);
+  \draw[arr] (sft.east) -- (rlvr.west);
+  \node[below=0.12cm of pt, font=\scriptsize, gray, align=center] {next-token\\on the internet};
+  \node[below=0.12cm of sft, font=\scriptsize, gray, align=center] {chat format,\\assistant persona};
+  \node[right=0.25cm of rlhf, font=\scriptsize, gray, align=left] {human preference\\feedback};
+  \node[right=0.25cm of rlvr, font=\scriptsize, gray, align=left] {verifiable reward\\(math, code)};
+\end{tikzpicture}
+\end{center}
+\vspace{0.3em}
+\begin{itemize}
+\item \textbf{Pretraining}: next-token prediction, negative log-likelihood, on trillions of tokens. Most of the compute.
+\item \textbf{SFT}: a little high-quality \texttt{\textless human\textgreater} / \texttt{\textless assistant\textgreater} data instills the chat format.
+\item \textbf{RLHF}: align to human preference judgments.
+\item \textbf{RLVR}: reinforcement learning on verifiable rewards (math, code).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{What is Reinforcement Learning?}
+\begin{center}
+\begin{tikzpicture}[
+  box/.style={rectangle, draw, thick, rounded corners=3pt, minimum width=2.8cm, minimum height=1cm, font=\small},
+  arr/.style={->, very thick, gray!70},
+]
+  \node[box, fill=blue!15, minimum height=1.5cm] (ag) at (0,0) {Agent};
+  \node[box, fill=green!15] (env) at (5.5,0.95) {Environment};
+  \node[box, fill=red!15] (rew) at (5.5,-0.95) {Reward};
+  \draw[arr] (ag.north) to[bend left=18] node[midway, above, font=\scriptsize] {action $a_t$} (env.west);
+  \draw[arr] (env.west) to[bend left=18] node[midway, below, font=\scriptsize, pos=0.55] {state $s_{t+1}$} (ag.east);
+  \draw[arr] (env.south) -- node[midway, right, font=\scriptsize] {state} (rew.north);
+  \draw[arr] (rew.west) to[bend left=25] node[midway, below, font=\scriptsize] {reward $r_{t+1}$} (ag.south);
+\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item The agent \textbf{chooses actions}; the environment returns a new state.
+\item A \textbf{reward} process assigns a score to the state.
+\item The agent's goal is to \textbf{maximize long-term reward}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Markov Decision Process}
+\[
+\mathcal{M} = (\mathcal{S}, \mathcal{A}, P, R, \gamma)
+\]
+\begin{itemize}
+\item $\mathcal{S}$: states
+\item $\mathcal{A}$: actions
+\item $P(s' \mid s, a)$: transition probabilities
+\item $R(s, a)$: reward
+\item $\gamma \in [0,1)$: discount factor
+\end{itemize}
+\vspace{0.5em}
+\textbf{Markov property}: the future depends only on the present state, not the full history.
+\end{frame}
+
+\begin{frame}{Return and Discounting}
+The agent maximizes the \textbf{expected return}: total reward extending into the future.
+\[
+G_t = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}
+\]
+\begin{itemize}
+\item Small $\gamma$: myopic, values immediate reward.
+\item Large $\gamma$: farsighted, values future reward almost as much as present.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Policies}
+A \textbf{policy} $\pi(a \mid s)$ gives the probability of each action in a state.
+\vspace{0.5em}
+\begin{columns}[T]
+\begin{column}{0.46\textwidth}
+\textbf{Simple}: a lookup table.
+\[
+\begin{array}{c|cc}
+ & a_1 & a_2 \\ \hline
+s_1 & 0.5 & 0.5 \\
+s_2 & 0.9 & 0.1 \\
+s_3 & 0.2 & 0.8
+\end{array}
+\]
+\end{column}
+\begin{column}{0.5\textwidth}
+\textbf{Deep}: a network's weights.
+\[
+\pi_\theta(a \mid s) = \mathrm{softmax}\big(f_\theta(s)\big)
+\]
+For an LLM, the state $s$ is the context and the action is the next token.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Value Functions}
+How good is a state, or a state-action pair, under policy $\pi$?
+\[
+V^\pi(s) = \mathbb{E}_\pi\!\left[ G_t \mid S_t = s \right]
+\qquad\text{(state value)}
+\]
+\[
+Q^\pi(s, a) = \mathbb{E}_\pi\!\left[ G_t \mid S_t = s,\, A_t = a \right]
+\qquad\text{(action value)}
+\]
+Value functions estimate expected return, which is what most RL algorithms learn to predict.
+\end{frame}
+
+\begin{frame}{The Core Problem}
+We want to maximize the expected return:
+\[
+J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\!\left[ R(\tau) \right]
+\]
+\begin{center}
+\emph{But no gradient can flow from the reward back to the model.}
+\end{center}
+\vspace{0.3em}
+The reward depends on the model's output, but the path is not differentiable:
+\begin{itemize}
+\item the environment's transition dynamics,
+\item the reward-generating process,
+\item the discrete action sampler.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Solution 1: Q-Learning}
+Learn to predict total reward, then act greedily.
+\[
+Q(s,a) \;\leftarrow\; \underbrace{r}_{\text{this step}} + \underbrace{\gamma \max_{a'} Q(s', a')}_{\text{best future}}
+\]
+\begin{itemize}
+\item Trained by \textbf{supervised consistency}: the temporal-difference error.
+\item Then pick the action with the highest predicted reward.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Solution 2: Policy Gradients}
+Optimize the policy network \emph{directly} to maximize expected reward.
+\begin{itemize}
+\item We cannot differentiate the environment or the reward process.
+\item The \textbf{policy gradient theorem} estimates the gradient from samples alone.
+\item Idea: push up the log-probability of actions that led to high return.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Policy Gradient: The Objective}
+\textbf{Expected return} over trajectories $\tau$:
+\[
+J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\!\left[ R(\tau) \right] = \int p_\theta(\tau)\, R(\tau)\, d\tau
+\]
+\textbf{Trajectory distribution}:
+\[
+p_\theta(\tau) = p(s_0) \prod_{t=0}^{T-1} \pi_\theta(a_t \mid s_t)\, p(s_{t+1} \mid s_t, a_t)
+\]
+The middle term, the environment dynamics, is unknown and non-differentiable.
+\end{frame}
+
+\begin{frame}{Policy Gradient: The Log-Derivative Trick}
+\textbf{Identity}:
+\[
+\nabla_\theta\, p_\theta(\tau) = p_\theta(\tau)\, \nabla_\theta \log p_\theta(\tau)
+\]
+\textbf{Applied to the objective}:
+\[
+\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\!\left[ \nabla_\theta \log p_\theta(\tau) \cdot R(\tau) \right]
+\]
+The gradient of an integral becomes an expectation of a gradient: estimable by sampling.
+\end{frame}
+
+\begin{frame}{Policy Gradient: The Environment Drops Out}
+\textbf{Log of the trajectory distribution}:
+\[
+\log p_\theta(\tau) = \log p(s_0) + \sum_t \log \pi_\theta(a_t \mid s_t) + \sum_t \log p(s_{t+1} \mid s_t, a_t)
+\]
+\textbf{Only the policy depends on $\theta$}:
+\[
+\nabla_\theta \log p_\theta(\tau) = \sum_{t=0}^{T-1} \nabla_\theta \log \pi_\theta(a_t \mid s_t)
+\]
+The environment terms vanish, since they do not depend on $\theta$.
+\end{frame}
+
+\begin{frame}{Policy Gradient Theorem}
+\textbf{Final result}:
+\[
+\boxed{\;\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\!\left[ \sum_{t=0}^{T-1} \nabla_\theta \log \pi_\theta(a_t \mid s_t) \cdot R(\tau) \right]\;}
+\]
+\textbf{Per-step form with advantage}:
+\[
+\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}\!\left[ \sum_t \nabla_\theta \log \pi_\theta(a_t \mid s_t) \cdot A(s_t, a_t) \right]
+\]
+Only requires sampling the policy and observing rewards. Still, RL is hard to make work in practice (high variance).
+\end{frame}
+
+\begin{frame}{Reward Model from Human Preferences}
+\begin{center}
+\includegraphics[height=0.52\textheight]{figures/llm/image34.png}
+\end{center}
+Humans rank model outputs; a \textbf{reward model} $r_\theta$ learns to predict the preferred one:
+\[
+\mathcal{L} = -\log \sigma\big( r_\theta(x_w) - r_\theta(x_l) \big)
+\]
+\hfill{\tiny From \cite{lambert2022}}\quad
+\end{frame}
+
+\begin{frame}{RLHF: Reinforcement Learning from Human Feedback}
+\begin{center}
+\includegraphics[height=0.82\textheight]{figures/llm/image40.png}
+\end{center}
+\hfill{\tiny From \cite{lambert2022}}\quad
+\end{frame}
+
+\begin{frame}{Proximal Policy Optimization}
+\vfill
+\resizebox{\textwidth}{!}{%
+$\displaystyle
+L(s, a, \theta_k, \theta) = \min\!\left( \frac{\pi_\theta(a \mid s)}{\pi_{\theta_k}(a \mid s)}\, \widehat{A}^{\,\pi_{\theta_k}}(s, a),\;\; \mathrm{clip}\!\left( \frac{\pi_\theta(a \mid s)}{\pi_{\theta_k}(a \mid s)},\, 1 - \epsilon,\, 1 + \epsilon \right) \widehat{A}^{\,\pi_{\theta_k}}(s, a) \right)
+$}
+\vfill
+\[
+\widehat{A}_t = -V(s_t) + r_t + \gamma r_{t+1} + \cdots + \gamma^{T-t+1} r_{T-1} + \gamma^{T-t} V(s_T)
+\]
+\vfill
+\end{frame}
+
+\begin{frame}{Constitutional AI}
+Replace much of the human feedback with feedback from the model itself, guided by a written \textbf{constitution}: the model \textbf{critiques} and \textbf{revises} its own responses (RLAIF).
+\begin{center}
+\includegraphics[width=\textwidth]{figures/llm/image50.png}
+\end{center}
+\hfill{\tiny From \cite{bai2022a}}\quad
+\end{frame}
+
+\begin{frame}{}
+\centering
+\Large \href{https://colab.research.google.com/github/wusche1/Illiad_ML_Engineering/blob/main/lectures/01_a_ml_foundations/exercises/06_rlhf/notebook.ipynb}{\textbf{Exercise 6: RLHF}} \\[1em]
+\normalsize Fine-tune a policy from a reward signal \\[1em]
+\qrcode[height=3cm]{https://colab.research.google.com/github/wusche1/Illiad_ML_Engineering/blob/main/lectures/01_a_ml_foundations/exercises/06_rlhf/notebook.ipynb}
 \end{frame}
 
 % ============================================================
