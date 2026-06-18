@@ -225,7 +225,7 @@ Example: rating text quality, given only pairwise human preferences (``I prefer 
 
 The preferred text should be rated higher:
 $$\mathcal{L} = -\log \sigma(r_\theta(x_w) - r_\theta(x_l))$$
-\cite{christiano2017}
+\hfill{\tiny \cite{christiano2017}}\quad
 \end{frame}
 
 \begin{frame}{Loss Functions: Reinforcement Learning}
@@ -267,8 +267,9 @@ Sometimes we cannot say what the correct output looks like, but we can identify 
 \begin{itemize}
 \item \textbf{Underfitting}: both losses high (model too simple or undertrained)
 \item \textbf{Overfitting}: train loss low, test loss rises (model memorizes)
-\item Regularization (L2, dropout \cite{srivastava2014}) constrains the model to delay overfitting
+\item Regularization (L2, dropout) constrains the model to delay overfitting
 \end{itemize}
+\hfill{\tiny Dropout \cite{srivastava2014}}\quad
 \end{frame}
 
 % ============================================================
@@ -534,13 +535,14 @@ Without nonlinearities, stacking linear layers just gives another linear layer.
 \vspace{-0.3em}
 \begin{itemize}
 \item \textbf{ReLU}: simple, effective, standard for MLPs
-\item \textbf{GELU} \cite{hendrycks2016}: smooth, used in transformers
+\item \textbf{GELU}: smooth, used in transformers
 \item \textbf{Sigmoid}: saturates at extremes, mostly historical
 \end{itemize}
+\hfill{\tiny GELU \cite{hendrycks2016}}\quad
 \end{frame}
 
 \begin{frame}{Universal Approximation}
-\textbf{Theorem} (Cybenko \cite{cybenko1989}, Hornik et al.\ \cite{hornik1989}):
+\textbf{Theorem} (Cybenko, Hornik et al.):
 A single hidden layer can approximate any continuous function on a compact set.
 \begin{center}
 \begin{tikzpicture}[xscale=1.0, yscale=0.8]
@@ -569,6 +571,7 @@ A single hidden layer can approximate any continuous function on a compact set.
 \item Existence result, not a recipe: says nothing about how many neurons you need
 \item In practice, deeper is much more efficient than wider
 \end{itemize}
+\hfill{\tiny \cite{cybenko1989, hornik1989}}\quad
 \end{frame}
 
 \begin{frame}{Depth: Stacking Layers}
@@ -609,7 +612,7 @@ Over/underparameterization:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Residual Connections \cite{he2015}}
+\begin{frame}{Residual Connections}
 Deep networks suffer from \textbf{vanishing gradients}: gradients shrink to zero through many layers.
 \vspace{0.3em}
 \begin{center}
@@ -655,6 +658,7 @@ $$x_{l+1} = x_l + f(x_l)$$
 \item Gradient flows unimpeded through the skip path (identity)
 \item Each block only needs to learn the \emph{residual} correction $f(x_l)$
 \end{itemize}
+\hfill{\tiny \cite{he2015}}\quad
 \end{frame}
 
 \begin{frame}[fragile]{Residual Connections in PyTorch}
@@ -714,7 +718,7 @@ The right architecture exploits structure in the data.
 An architecture that respects a symmetry needs \textbf{fewer parameters} and \textbf{less data}.
 \end{frame}
 
-\begin{frame}{Convolutional Neural Networks \cite{lecun1998}}
+\begin{frame}{Convolutional Neural Networks}
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
   % Input grid 5x5
@@ -781,6 +785,7 @@ An architecture that respects a symmetry needs \textbf{fewer parameters} and \te
 \item Same features detected regardless of location $\Rightarrow$ translation invariance
 \item Hierarchy: edges $\rightarrow$ textures $\rightarrow$ parts $\rightarrow$ objects
 \end{itemize}
+\hfill{\tiny \cite{lecun1998}}\quad
 \end{frame}
 
 \begin{frame}[fragile]{CNNs in PyTorch}
@@ -804,7 +809,7 @@ cnn = nn.Sequential(
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Transformers (Preview) \cite{vaswani2017}}
+\begin{frame}{Transformers (Preview)}
 \begin{center}
 \begin{tikzpicture}[
   tok/.style={rectangle, draw, thick, fill=blue!10, minimum width=0.9cm, minimum height=0.55cm, font=\scriptsize},
@@ -878,6 +883,7 @@ cnn = nn.Sequential(
 \item \textbf{MLP}: each token processed independently (same weights, different data)
 \item We will go much deeper in the afternoon session
 \end{itemize}
+\hfill{\tiny \cite{vaswani2017}}\quad
 \end{frame}
 
 \begin{frame}{}
@@ -908,13 +914,14 @@ Any property not set by gradient descent is set by the experimenter:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Scaling Laws \cite{kaplan2020, hoffmann2022}}
+\begin{frame}{Scaling Laws}
 \begin{center}
 \includegraphics[width=\textwidth]{figures/scaling_laws.png}
 \end{center}
 \vspace{0.5em}
 Performance follows smooth power laws across $>6$ orders of magnitude in compute, data, and parameters.
 Cheap small experiments predict large-scale performance.
+\hfill{\tiny \cite{kaplan2020, hoffmann2022}}\quad
 \end{frame}
 
 \begin{frame}{}
@@ -1307,6 +1314,12 @@ Q(s,a) \;\leftarrow\; \underbrace{r}_{\text{this step}} + \underbrace{\gamma \ma
 \end{frame}
 
 \begin{frame}{Solution 2: Policy Gradients}
+\[
+J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\!\left[ R(\tau) \right] = \int p_\theta(\tau)\, R(\tau)\, d\tau
+\]
+The parameter $\theta$ sits inside the distribution we sample from, not inside an expression we can evaluate and differentiate.
+\vspace{0.5em}
+
 Optimize the policy network \emph{directly} to maximize expected reward.
 \begin{itemize}
 \item We cannot differentiate the environment or the reward process.
@@ -1356,11 +1369,11 @@ The environment terms vanish, since they do not depend on $\theta$.
 \[
 \boxed{\;\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\!\left[ \sum_{t=0}^{T-1} \nabla_\theta \log \pi_\theta(a_t \mid s_t) \cdot R(\tau) \right]\;}
 \]
-\textbf{Per-step form with advantage}:
+\textbf{Per-step form with advantage} $A^\pi(s, a) = Q^\pi(s, a) - V^\pi(s)$:
 \[
-\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}\!\left[ \sum_t \nabla_\theta \log \pi_\theta(a_t \mid s_t) \cdot A(s_t, a_t) \right]
+\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}\!\left[ \sum_t \nabla_\theta \log \pi_\theta(a_t \mid s_t) \cdot A^\pi(s_t, a_t) \right]
 \]
-Only requires sampling the policy and observing rewards. Still, RL is hard to make work in practice (high variance).
+Same gradient in expectation, far lower variance: weight each action by how much it beat the average for its state, not by the whole episode's return.
 \end{frame}
 
 \begin{frame}{Reward Model from Human Preferences}
